@@ -1,0 +1,56 @@
+---
+import { getArticles } from '../../../lib/cms';
+import { formatDate } from '../../../lib/utils';
+
+interface Props {
+  /** Slug of the article being viewed (excluded from the list). */
+  current: string;
+}
+
+const { current } = Astro.props;
+// Three other articles, oldest first (same rule as the original template).
+const related = [...(await getArticles())].reverse().filter((a) => a.slug !== current).slice(0, 3);
+---
+<section class="section worm-ivory">
+  <div class="section-gap">
+    <div class="container">
+      <div class="section-header related-header">
+        <h2 class="section-heading">Related articles</h2>
+      </div>
+      <div class="w-dyn-list">
+        <div role="list" class="blog-list w-dyn-items">
+          {related.map((a) => (
+            <div role="listitem" class="w-dyn-item">
+              <div to-top-2="" class="blog-card">
+                <div class="blog-image-wrap">
+                  <a href={a.url} class="blog-image-link w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} loading="lazy" width="1547" height="1276" alt={a.thumbnail.alt} class="blog-image">
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+                <div class="blog-card-body">
+                  <div class="blog-card-text">
+                    <div class="blog-meta">
+                      <div class="blog-meta-text upper">{a.category}</div>
+                      <div class="badge-dot"></div>
+                      <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                    </div>
+                    <div {...{ href: '#' }} class="blog-title-link">
+                      <div class="blog-title">{a.title}</div>
+                    </div>
+                  </div>
+                  <a href={a.url} class="blog-button w-inline-block">
+                    <div>Read article</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blog-button-icon blog-button-icon">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.501 11.9977L5.00098 11.9977"></path>
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.9991 5.99763C12.9991 5.99763 18.999 10.4166 18.999 11.9977C18.999 13.5788 12.999 17.9977 12.999 17.9977"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {related.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+      </div>
+    </div>
+  </div>
+</section>

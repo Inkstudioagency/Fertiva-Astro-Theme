@@ -1,0 +1,27 @@
+---
+import Navbar from '../../global/Navbar.astro';
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<div class="hero-wrapper">
+  <div class="about-hero-area">
+    <Navbar variant="nav-v1" />
+    <section class="section">
+      <div class="container v1">
+        <div class="inner-hero">
+          <div class="inner-left about">
+            <div class="inner-badge">
+              <div class="badge-dot white"></div>
+              <div>Our story</div>
+            </div>
+            <h1 class="hero-heading">Get in Touch With Our Medical Experts</h1>
+          </div>
+          <div class="inner-hero-right">
+            <p class="paragraph-regular white">From fertility assessment to embryo transfer and pregnancy care, Fertiva combines advanced IVF services with tailored care plans</p>
+            <PrimaryButton href="/contact-v1" label="Book Consultation" variant="transparent" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="inner-hero-overlay"></div>
+  </div>
+</div>

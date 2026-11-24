@@ -1,0 +1,156 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getServices } from '../../../lib/cms';
+
+// Newest services first, one per row (rows alternate layout).
+const services = [...(await getServices())].reverse();
+---
+<section class="section worm-ivory">
+  <div class="section-gap">
+    <div class="container">
+      <div class="v2-services-header">
+        <div class="section-header">
+          <div class="badge">
+            <div class="badge-dot"></div>
+            <div>Our services</div>
+          </div>
+          <div class="max-width-36">
+            <h2 class="section-heading narrow">Specialized care for every stage of life</h2>
+          </div>
+        </div>
+        <p to-top-2="" class="support-intro">Evidence-based treatment and compassionate support, from your first fertility question to pregnancy and beyond.</p>
+      </div>
+      <div class="v2-service-stack">
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            {services.slice(0, 1).map((s) => (
+              <div role="listitem" class="w-dyn-item">
+                <div class="v2-service-row">
+                  <div class="v2-service-info">
+                    <div class="support-card-title">{s.name}</div>
+                    <p class="v2-service-text">{s.summary}</p>
+                    <div class="v2-feature-list">
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[0]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[1]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[2]}</div>
+                      </div>
+                    </div>
+                    <PrimaryButton href={s.url} label="View Details" />
+                  </div>
+                  <a href={s.url} class="service-image-link w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="v2-service-image">
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          {services.slice(0, 1).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+        </div>
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            {services.slice(1, 2).map((s) => (
+              <div role="listitem" class="w-dyn-item">
+                <div class="v2-service-row reverse">
+                  <div class="v2-service-info">
+                    <div class="support-card-title">{s.name}</div>
+                    <p class="v2-service-text">{s.summary}</p>
+                    <div class="v2-feature-list">
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[0]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[1]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[2]}</div>
+                      </div>
+                    </div>
+                    <PrimaryButton href={s.url} label="View Details" />
+                  </div>
+                  <a href={s.url} class="service-image-link w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="v2-service-image">
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          {services.slice(1, 2).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+        </div>
+        <div class="w-dyn-list">
+          <div role="list" class="w-dyn-items">
+            {services.slice(2, 3).map((s) => (
+              <div role="listitem" class="w-dyn-item">
+                <div class="v2-service-row">
+                  <div class="v2-service-info">
+                    <div class="support-card-title">{s.name}</div>
+                    <p class="v2-service-text">{s.summary}</p>
+                    <div class="v2-feature-list">
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[0]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[1]}</div>
+                      </div>
+                      <div class="v2-feature">
+                        <div class="v2-feature-dot"></div>
+                        <div>{s.features[2]}</div>
+                      </div>
+                    </div>
+                    <PrimaryButton href={s.url} label="View Details" />
+                  </div>
+                  <a href={s.url} class="service-image-link w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="v2-service-image">
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+          {services.slice(2, 3).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+        </div>
+      </div>
+    </div>
+    <div to-top-0="" class="v2-big-marquee">
+      <div class="v2-big-track">
+        <div class="v2-big-text">General consultation</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+        <div class="v2-big-text">24/7 Online support</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+        <div class="v2-big-text">Fast appointments</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+      </div>
+      <div aria-hidden="true" class="v2-big-track">
+        <div class="v2-big-text">General consultation</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+        <div class="v2-big-text">24/7 Online support</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+        <div class="v2-big-text">Fast appointments</div><svg fill="none" viewBox="0 0 60 60" width="100%" xmlns="http://www.w3.org/2000/svg" class="v2-big-star v2-big-star">
+          <path fill="currentColor" d="M36 0H24V18.0948C23.9494 21.3651 21.2827 24 18.0007 24H0V36H13.0294C16.212 36 19.2643 34.7356 21.5146 32.4854L32.4854 21.5146C34.7356 19.2643 36 16.212 36 13.0294V0Z"></path>
+          <path fill="currentColor" d="M24 60H36V41.9052C36.0506 38.6349 38.7173 36 41.9993 36H60V24H46.9706C43.788 24 40.7357 25.2644 38.4854 27.5146L27.5146 38.4854C25.2644 40.7357 24 43.788 24 46.9706V60Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>

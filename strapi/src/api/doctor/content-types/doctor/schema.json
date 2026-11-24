@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctors",
+  "info": {
+    "singularName": "doctor",
+    "pluralName": "doctors",
+    "displayName": "Doctor",
+    "description": "Specialists shown on the doctors pages"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "specialtyTitle": {
+      "type": "string"
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "required": true
+    },
+    "experience": {
+      "type": "string"
+    },
+    "dutyTime": {
+      "type": "string"
+    },
+    "surgeries": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "string"
+    },
+    "about": {
+      "type": "blocks"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat",
+      "max": 3
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "clinicAddress": {
+      "type": "string"
+    },
+    "weekdayHours": {
+      "type": "string"
+    },
+    "saturdayHours": {
+      "type": "string"
+    },
+    "sundayHours": {
+      "type": "string"
+    },
+    "consultationFee": {
+      "type": "string"
+    },
+    "expertise": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.text-item",
+      "max": 6
+    },
+    "timeline": {
+      "type": "component",
+      "repeatable": true,
+      "component": "doctor.timeline-entry",
+      "max": 4
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "author"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

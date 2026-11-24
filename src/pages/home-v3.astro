@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import HomeV3Hero from '../components/sections/home/HomeV3Hero.astro';
+import HomeV3About from '../components/sections/home/HomeV3About.astro';
+import HomeV3Services from '../components/sections/home/HomeV3Services.astro';
+import HomeV3Solutions from '../components/sections/home/HomeV3Solutions.astro';
+import HomeV3Steps from '../components/sections/home/HomeV3Steps.astro';
+import HomeV3WhyUs from '../components/sections/home/HomeV3WhyUs.astro';
+import TrustedFamilies from '../components/sections/shared/TrustedFamilies.astro';
+import HomeV3Doctors from '../components/sections/home/HomeV3Doctors.astro';
+import BlogV3 from '../components/sections/shared/BlogV3.astro';
+import FaqV3 from '../components/sections/shared/FaqV3.astro';
+import CtaV3 from '../components/sections/shared/CtaV3.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b567a';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Home V3 - Fertiva" description="A warm, image-led homepage for fertility, pregnancy and family care clinics, highlighting specialities, expert doctors and quick appointment booking.">
+  <div class="page-wrapper">
+    <HomeV3Hero />
+    <div class="main">
+      <HomeV3About />
+      <HomeV3Services />
+      <HomeV3Solutions />
+      <HomeV3Steps />
+      <HomeV3WhyUs />
+      <TrustedFamilies instanceId="646a40c3-1a11-0d97-4130-9e9b4eaa14cf" />
+      <HomeV3Doctors />
+      <BlogV3 />
+      <FaqV3 />
+      <CtaV3 />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

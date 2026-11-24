@@ -1,0 +1,129 @@
+---
+import { getDoctors, getDoctorCategories } from '../../../lib/cms';
+
+const doctors = await getDoctors();
+const tabs = (await getDoctorCategories()).map((label) => {
+  const featured = doctors.find((d) => d.category === label)!;
+  const start = doctors.indexOf(featured);
+  const next = [1, 2, 3].map((n) => doctors[(start + n) % doctors.length]).filter((d) => d && d !== featured);
+  return { label, featured: [featured], next };
+});
+---
+<section class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <div class="doc-header">
+        <div class="section-header">
+          <div class="badge">
+            <div class="badge-dot"></div>
+            <div>Doctors</div>
+          </div>
+          <h2 class="section-heading">Meet our caring specialists</h2>
+        </div>
+      </div>
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="doc-tabs w-tabs">
+        <div to-top-4="" class="doc-tab-menu w-tab-menu">
+          {tabs.map((tab, i) => (
+            <a data-w-tab={`Tab ${i + 1}`} class:list={['doctor-tab-link light w-inline-block w-tab-link', i === 0 && 'w--current']}>
+              <div>{tab.label}</div>
+            </a>
+          ))}
+        </div>
+        <div to-top-2="" class="w-tab-content">
+          {tabs.map((tab, i) => (
+            <div data-w-tab={`Tab ${i + 1}`} class:list={['w-tab-pane', i === 0 && 'w--tab-active']}>
+              <div class="doc-body">
+                <div class="w-dyn-list">
+                  <div role="list" class="w-dyn-items">
+                    {tab.featured.map((d) => (
+                      <div role="listitem" class="w-dyn-item">
+                        <div class="doc-item">
+                          <a href={d.url} class="doc-row active w-inline-block"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="doc-avatar">
+                            <div class="doc-text">
+                              <h3 class="doc-name">{d.name}</h3>
+                              <div class="doc-role">{d.specialtyTitle}</div>
+                            </div>
+                            <div class="doc-arrow active"><svg fill="none" viewBox="0 0 20 20" width="100%" xmlns="http://www.w3.org/2000/svg" class="doc-arrow-icon doc-arrow-icon">
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M6.667 13.333l6.666-6.666M7.5 6.667h5.833V12.5"></path>
+                              </svg></div>
+                            <div class="demo">#</div>
+                          </a>
+                          <div class="doc-portrait active">
+                            <div class="doc-photo"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="care-bg-image">
+                              <div class="proc-shade"></div>
+                              <div class="doc-info">
+                                <div class="doc-info-name">{d.name}</div>
+                                <div class="doc-stats">
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Exp</div>
+                                    <div class="doc-stat-value">{d.experience}</div>
+                                  </div>
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Duty time</div>
+                                    <div class="doc-stat-value">{d.dutyTime}</div>
+                                  </div>
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Surgeries</div>
+                                    <div class="doc-stat-value">{d.surgeries}</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {tab.featured.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+                </div>
+                <div class="w-dyn-list">
+                  <div role="list" class="w-dyn-items">
+                    {tab.next.map((d) => (
+                      <div role="listitem" class="w-dyn-item">
+                        <div class="doc-item">
+                          <a href={d.url} class="doc-row w-inline-block"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="doc-avatar">
+                            <div class="doc-text">
+                              <h3 class="doc-name">{d.name}</h3>
+                              <div class="doc-role">{d.specialtyTitle}</div>
+                            </div>
+                            <div class="doc-arrow"><svg fill="none" viewBox="0 0 20 20" width="100%" xmlns="http://www.w3.org/2000/svg" class="doc-arrow-icon doc-arrow-icon">
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M6.667 13.333l6.666-6.666M7.5 6.667h5.833V12.5"></path>
+                              </svg></div>
+                            <div class="demo">#</div>
+                          </a>
+                          <div class="doc-portrait">
+                            <div class="doc-photo"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="care-bg-image">
+                              <div class="proc-shade"></div>
+                              <div class="doc-info">
+                                <div class="doc-info-name">{d.name}</div>
+                                <div class="doc-stats">
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Exp</div>
+                                    <div class="doc-stat-value">{d.experience}</div>
+                                  </div>
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Duty time</div>
+                                    <div class="doc-stat-value">{d.dutyTime}</div>
+                                  </div>
+                                  <div class="doc-stat">
+                                    <div class="doc-stat-label">Surgeries</div>
+                                    <div class="doc-stat-value">{d.surgeries}</div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  {tab.next.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import LicensesContent from '../components/sections/utility/LicensesContent.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5662';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Licenses - Fertiva" description="Find licensing details for the fonts, images, icons and other assets used in the Fertiva Astro theme.">
+  <div class="page-wrapper">
+    <LicensesContent />
+    <div class="main">
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

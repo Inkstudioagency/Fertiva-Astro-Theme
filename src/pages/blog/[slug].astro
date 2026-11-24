@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/global/Footer.astro';
+import BlogDetailHero from '../../components/sections/blog/BlogDetailHero.astro';
+import BlogDetailBody from '../../components/sections/blog/BlogDetailBody.astro';
+import BlogRelated from '../../components/sections/blog/BlogRelated.astro';
+import Cta from '../../components/sections/shared/Cta.astro';
+import { getArticles, type Article } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return articles.map((article) => ({ params: { slug: article.slug }, props: { article } }));
+}
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+const WF_PAGE = '6b03d34f707687d1b49b566a';
+---
+
+<BaseLayout
+  wfPage={WF_PAGE}
+  title={article.seo.title || `${article.title} - Fertiva`}
+  description={article.seo.description || article.summary}
+  image={article.thumbnail.src}
+  type="article"
+>
+  <div class="page-wrapper">
+    <BlogDetailHero article={article} />
+    <div class="main">
+      <BlogDetailBody article={article} />
+      <BlogRelated current={article.slug} />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

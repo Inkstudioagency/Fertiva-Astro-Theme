@@ -1,0 +1,53 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import type { Article } from '../../../lib/cms';
+import { blocksToHtml } from '../../../lib/blocks';
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+const authorPhoto = article.author?.photo ?? { src: '', alt: '' };
+---
+<section class="section light">
+  <div class="section-gap blog">
+    <div class="container">
+      <div class="blog-layout">
+        <div to-top-0="" class="blog-rich-text w-richtext" set:html={blocksToHtml(article.body)}></div>
+        <div class="blog-sidebar">
+          <div to-top-0="" class="blog-side-card">
+            <div class="contact-row"><img src={authorPhoto.src} srcset={authorPhoto.srcset} loading="lazy" width="1644" height="2024" alt={authorPhoto.alt} class="blog-author-photo">
+              <div>
+                <div class="contact-label">Written by</div>
+                <div class="contact-value">{article.author?.name}</div>
+              </div>
+            </div>
+          </div>
+          <div to-top-2="" class="blog-side-card">
+            <div class="contact-value">Social share</div>
+            <div class="share-row">
+              <a href="https://www.facebook.com/sharer/sharer.php" aria-label="Share on Facebook" target="_blank" class="share-button w-inline-block"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="profile-small-icon profile-small-icon">
+                  <path stroke-linejoin="round" stroke-width="1.5" stroke="currentColor" d="M14 8h2.5V4.5H14A4 4 0 0 0 10 8.5V11H7.5v3.5H10V21h3.5v-6.5H16l.5-3.5h-3V8.5c0-.3.2-.5.5-.5Z"></path>
+                </svg></a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/" aria-label="Share on LinkedIn" target="_blank" class="share-button w-inline-block"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="profile-small-icon profile-small-icon">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M7 10v7M7 7v.01M11 17v-4a2.5 2.5 0 0 1 5 0v4M11 10v7"></path>
+                  <rect stroke-width="1.5" stroke="currentColor" rx="4" height="18" width="18" y="3" x="3"></rect>
+                </svg></a>
+              <a href="https://x.com/intent/post" aria-label="Share on X" target="_blank" class="share-button w-inline-block"><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="profile-small-icon profile-small-icon">
+                  <path stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M4 4l16 16M20 4L4 20"></path>
+                </svg></a>
+            </div>
+          </div>
+          <div to-top-4="" class="blog-side-card dark">
+            <div class="care-card-text">
+              <h2 class="care-card-title">Worried about your health?</h2>
+              <p class="care-card-desc">Book a consultation and get a same-week visit from one of our specialists.</p>
+            </div>
+            <PrimaryButton href="/contact-v1" label="Book Appointment" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getArticles } from '../../../lib/cms';
+import { formatDate } from '../../../lib/utils';
+
+const latest = (await getArticles()).slice(0, 3);
+---
+<section data-wf-component-id="0b5b6ffb-d498-7e8b-4a95-c41fdb319be0" data-wf-variant-state="base" class="section worm-ivory">
+  <div class="section-gap">
+    <div class="container">
+      <div class="blogv2-grid">
+        <div class="blog-v2-left">
+          <div class="section-header">
+            <div class="badge">
+              <div class="badge-dot"></div>
+              <div>Blogs</div>
+            </div>
+            <h2 class="section-heading">Latest insights on women’s health</h2>
+            <p to-top-2="" class="profile-text">Practical, doctor-reviewed advice on fertility, pregnancy and hormonal health, written by our specialists.</p>
+          </div>
+          <div to-top-4="">
+            <PrimaryButton href="/blog" label="Explore Blogs" variant="primary-border" />
+          </div>
+        </div>
+        <div class="blogv2-wrap">
+          <div class="w-dyn-list">
+            <div role="list" class="blogv2-list w-dyn-items">
+              {latest.map((a) => (
+                <div role="listitem" class="blog-collection-item w-dyn-item">
+                  <div {...{ href: '#' }} class="blogv2-card">
+                    <div class="blogv2-content">
+                      <div class="blog-v2-top">
+                        <div class="blogv2-meta">
+                          <div class="blogv2-tag">{a.category}</div>
+                          <div class="blogv2-date">{formatDate(a.publishDate)}</div>
+                        </div>
+                        <div class="font-medium semibold">{a.title}</div>
+                      </div>
+                      <a href={a.url} class="blogv2-read w-inline-block">
+                        <div>Read blog</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blogv2-arrow blogv2-arrow">
+                          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M20 12H4M15 17s5-3.682 5-5c0-1.318-5-5-5-5"></path>
+                        </svg>
+                      </a>
+                    </div>
+                    <a href={a.url} class="blog-image-link-v2 w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1544" height="1276" loading="lazy" alt={a.thumbnail.alt} class="blogv2-image"></a>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {latest.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

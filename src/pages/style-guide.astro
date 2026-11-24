@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import StyleGuideHero from '../components/sections/utility/StyleGuideHero.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5660';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Style Guide - Fertiva" description="Review the Fertiva design system, including the color palette, typography scale, buttons, form elements and other reusable UI components.">
+  <div class="page-wrapper">
+    <StyleGuideHero />
+    <div class="main">
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

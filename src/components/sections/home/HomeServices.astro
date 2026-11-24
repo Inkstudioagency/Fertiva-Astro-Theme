@@ -1,0 +1,78 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getServices } from '../../../lib/cms';
+
+const services = await getServices();
+---
+<section class="section worm-ivory">
+  <div class="section-gap service">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge">
+          <div class="badge-dot"></div>
+          <div>Services</div>
+        </div>
+        <div class="max-width-36">
+          <h2 heading-rebuild="" class="section-heading">Specialized care for women and families</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div to-top-2="" class="service-accordion">
+    <div class="w-dyn-list">
+      <div role="list" class="w-dyn-items">
+        {services.map((s) => (
+          <div role="listitem" class="w-dyn-item">
+            <div class="service-item">
+              <div class="service-wrap">
+                <div class="service-item-top">
+                  <div class="service-item-left">
+                    <div class="process-number-wrap large">
+                      <div>{s.number}</div>
+                    </div>
+                    <h3 class="service-item-title">{s.name}</h3>
+                  </div>
+                  <div class="service-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="service-icon plus">
+                      <path d="M12 4V20M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24" fill="none" class="service-icon minus">
+                      <path d="M20 12H4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                </div>
+                <div class="service-item-bottom">
+                  <div class="service-content">
+                    <a href={s.url} class="service-image-wrap w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="service-image">
+                      <div class="demo">#</div>
+                    </a>
+                    <div class="service-info">
+                      <p class="paragraph-regular white">{s.summary}</p>
+                      <div class="service-list">
+                        <div class="service-list-item">
+                          <div class="service-list-dot"></div>
+                          <div class="paragraph-regular white">{s.features[0]}</div>
+                        </div>
+                        <div class="service-list-item">
+                          <div class="service-list-dot"></div>
+                          <div class="paragraph-regular white">{s.features[1]}</div>
+                        </div>
+                        <div class="service-list-item">
+                          <div class="service-list-dot"></div>
+                          <div class="paragraph-regular white">{s.features[2]}</div>
+                        </div>
+                        <div class="service-list-item">
+                          <div class="service-list-dot"></div>
+                          <div class="paragraph-regular white">{s.features[3]}</div>
+                        </div>
+                      </div>
+                      <PrimaryButton href={s.url} label="Book appointment" variant="with-border" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {services.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+    </div>
+  </div>
+</section>

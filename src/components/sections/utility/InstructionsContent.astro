@@ -1,0 +1,93 @@
+---
+/**
+ * Theme instructions page. Same layout as the original Webflow "Instructions" page,
+ * with the content rewritten for the Astro + Strapi version of the theme.
+ */
+import Navbar from '../../global/Navbar.astro';
+
+const code = `<!-- src/components/global/SiteScripts.astro -->
+
+<!-- Lenis Smooth Scroll -->
+<link rel="stylesheet" href="/js/vendor/lenis.css" />
+<script is:inline src="/js/vendor/lenis.min.js"></script>
+<script is:inline>
+  if (typeof Lenis !== 'undefined') {
+    const lenis = new Lenis({ smoothWheel: true, lerp: 0.07, wheelMultiplier: 1, infinite: false });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+</script>
+
+<!-- Counter Animation (GSAP + ScrollTrigger, self-hosted in /js/vendor) -->
+<script is:inline>
+  window.Webflow ||= [];
+  window.Webflow.push(() => {
+    document.querySelectorAll('[data-counter]').forEach((counter) => {
+      // ...counts from 0 to the number typed in the element
+      gsap.fromTo(value, { current: 0 }, {
+        current: target,
+        duration: 1.8,
+        ease: 'power2.out',
+        scrollTrigger: { trigger: counter, start: 'top 88%', once: true },
+      });
+    });
+  });
+</script>`;
+---
+
+<div class="hero-wrapper-v2">
+  <Navbar variant="base" />
+  <section class="section">
+    <div class="section-gap">
+      <div class="w-layout-blockcontainer container w-container">
+        <div class="instruction-wrapper">
+          <div class="instruction-header">
+            <h1 class="hero-heading primary-color">Instructions</h1>
+            <div class="instruction-p-wrap">
+              <p class="instruction-paragraph">Setup &amp; usage guide for the Fertiva Astro theme: where content lives, how the animations work and what to edit</p>
+            </div>
+          </div>
+          <div class="instruction-main">
+            <p class="instruction-p">1. Site-wide scripts are loaded in src/components/global/SiteScripts.astro.<br>2. The two custom effects are set up like this:</p>
+            <div to-top-6s="" class="instruction-content-block">
+              <pre contenteditable="false" class="instruction-code-block w-code-block" style="display:block;overflow-x:auto;background:#2b2b2b;color:#f8f8f2;padding:0.5em"><code class="language-javascript" style="white-space:pre-wrap" set:text={code}></code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="instruction-content-block is-instruction-cards">
+          <div class="difference-card is-instruction-card">
+            <h2 class="instruction-card-title">Where Things Live</h2>
+            <p class="instruction-p">Services, doctors and blog articles are managed in Strapi (Content Manager). The site reads them when it builds, so rebuild or redeploy after publishing changes. Navigation, footer links and social profiles are in src/config/menu.json, and the site name and SEO defaults in src/config/site.json. All other page text lives in the section components in src/components/sections. Reveal, hover and slider animations come from the original design and run from public/js/webflow.js; they rely on the existing class names and each page's wfPage id, so keep those unchanged.</p>
+          </div>
+          <div class="difference-card is-instruction-card">
+            <h3 class="instruction-card-title">Element map</h3>
+            <div class="instruction-wrap">
+              <p class="instruction-p">Counter animation (GSAP): any element with the attribute data-counter. Used on statistic numbers such as &quot;250+&quot; or &quot;98%&quot;.</p>
+              <p class="instruction-p">Smooth scrolling (Lenis): applies to the whole page. No class or attribute is needed.</p>
+            </div>
+          </div>
+          <div class="difference-card is-instruction-card">
+            <h3 class="instruction-card-title">1. Counter animation</h3>
+            <div class="instruction-wrap">
+              <p class="instruction-p">What it does: when a number scrolls into view, it counts up from 0 to the value typed in the element. Any prefix or suffix (such as $, + or %) stays in place, and decimals and comma separators are kept.</p>
+              <p class="instruction-p">Add it to a number: type the final value in the section component and add the data-counter attribute, for example &lt;div data-counter&gt;250+&lt;/div&gt;. To stop a single number from counting, remove that attribute.</p>
+              <p class="instruction-p">Key values to edit (in the &quot;Counter Animation&quot; script in SiteScripts.astro): duration: 1.8 sets the length of the count in seconds. ease: &quot;power2.out&quot; sets the easing curve; use &quot;none&quot; for a steady, linear count. start: &quot;top 88%&quot; starts the count when the top of the number reaches 88% of the screen height; a lower percentage starts it later. once: true plays the count only once per visit.</p>
+              <p class="instruction-p">Remove it: delete the &quot;Counter Animation&quot; script from SiteScripts.astro. Every number then shows its final value straight away, and the layout does not change.</p>
+            </div>
+          </div>
+          <div class="difference-card is-instruction-card">
+            <h3 class="instruction-card-title">2. Smooth scrolling</h3>
+            <div class="instruction-wrap">
+              <p class="instruction-p">What it does: adds gentle easing to mouse-wheel and trackpad scrolling across every page. Touch scrolling on phones stays native.</p>
+              <p class="instruction-p">Key values to edit (in the &quot;Lenis Smooth Scroll&quot; script in SiteScripts.astro): lerp: 0.07 controls the smoothing, from 0 to 1; a lower value feels smoother and slower, a higher value feels quicker. wheelMultiplier: 1 sets how far one wheel step scrolls. smoothWheel: true turns the effect on; set it to false to switch smoothing off without deleting the code.</p>
+              <p class="instruction-p">Remove it: delete the Lenis stylesheet link, the lenis.min.js script and the script below them from SiteScripts.astro. The browser&#x27;s normal scrolling returns and the layout does not change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,38 @@
+---
+import Navbar from '../../global/Navbar.astro';
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<div class="about-hero-wrap">
+  <Navbar variant="base" />
+  <header class="hero-section">
+    <div class="container">
+      <div class="v2-hero-grid center">
+        <div class="v2-hero-top">
+          <div class="badge home">
+            <div class="badge-dot"></div>
+            <div>About Fertiva</div>
+          </div>
+          <h1 class="service-title">Get in Touch With Our Medical Experts</h1>
+          <p class="service-intro-text about-v2">Since 2014 we’ve helped more than 4,700 families through fertility, pregnancy and every stage of women’s health, with specialists who take the time to listen.</p>
+          <div class="v2-hero-actions">
+            <div class="v2-buttons">
+              <PrimaryButton href="/contact-v1" label="Book Appointment" />
+              <PrimaryButton href="/services" label="Explore Services" variant="white" />
+            </div>
+          </div>
+        </div>
+        <div class="about-collage"><img src="/images/Image-A.webp" loading="lazy" width="1074" height="1440" alt="Two smiling Fertiva clinicians" srcset="/images/Image-A-p-500.webp 500w, /images/Image-A-p-800.webp 800w, /images/Image-A.webp 1074w" sizes="(max-width: 1074px) 100vw, 1074px" class="collage-img-a">
+          <div class="collage-col"><img src="/images/Image-B.webp" loading="lazy" width="840" height="900" alt="Doctor examining a patient" srcset="/images/Image-B-p-500.webp 500w, /images/Image-B-p-800.webp 800w, /images/Image-B.webp 840w" sizes="(max-width: 840px) 100vw, 840px" class="collage-img-b">
+            <div class="v2-stat-tile">
+              <div class="badge-dot large"></div>
+              <div class="v2-stat">
+                <div data-counter="counter" class="v2-stat-value">4,700+</div>
+                <div class="profile-text">Families supported since 2014</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>

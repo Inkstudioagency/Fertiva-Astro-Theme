@@ -1,0 +1,170 @@
+---
+import { getArticles } from '../../../lib/cms';
+import { formatDate } from '../../../lib/utils';
+
+const articles = await getArticles();
+const latest = articles.slice(0, 3);
+const earliest = [...articles].reverse();
+---
+<section data-wf-component-id="52948909-4e5e-f280-eb75-dc2043b8eabb" data-wf-variant-state="base" class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <div class="section-header center">
+        <div class="badge">
+          <div class="badge-dot"></div>
+          <div>Insights</div>
+        </div>
+        <h2 heading-rebuild="" class="section-heading center">Blogs and insights</h2>
+      </div>
+      <div class="blog-wrapper">
+        <div to-top-2="" class="blog-collection w-dyn-list">
+          <div role="list" class="blog-list w-dyn-items">
+            {latest.map((a) => (
+              <div role="listitem" class="w-dyn-item">
+                <div to-top-2="" class="blog-card">
+                  <div class="blog-image-wrap">
+                    <a href={a.url} class="blog-image-link w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1544" height="1276" loading="lazy" alt={a.thumbnail.alt} class="blog-image"></a>
+                  </div>
+                  <div class="blog-card-body">
+                    <div class="blog-card-text">
+                      <div class="blog-meta">
+                        <div class="blog-meta-text upper">{a.category}</div>
+                        <div class="badge-dot"></div>
+                        <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                      </div>
+                      <div class="blog-title-link">
+                        <div class="blog-title">{a.title}</div>
+                      </div>
+                    </div>
+                    <a href={a.url} class="blog-button w-inline-block">
+                      <div>Read article</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blog-button-icon blog-button-icon">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.501 11.9977L5.00098 11.9977"></path>
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.9991 5.99763C12.9991 5.99763 18.999 10.4166 18.999 11.9977C18.999 13.5788 12.999 17.9977 12.999 17.9977"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          {latest.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+        </div>
+        <div data-delay="4000" data-animation="slide" class="blog-slider w-slider" data-autoplay="false" to-top-2="" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+          <div class="doctor-slider-mask w-slider-mask">
+            <div class="doctor-slide w-slide">
+              <div to-top-2="" class="w-dyn-list">
+                <div role="list" class="blog-list w-dyn-items">
+                  {earliest.slice(0, 1).map((a) => (
+                    <div role="listitem" class="w-dyn-item">
+                      <div class="blog-card">
+                        <div class="blog-image-wrap">
+                          <a href={a.url} class="blog-image-link w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1547" height="1276" loading="lazy" alt={a.thumbnail.alt} class="blog-image"></a>
+                        </div>
+                        <div class="blog-card-body">
+                          <div class="blog-card-text">
+                            <div class="blog-meta">
+                              <div class="blog-meta-text upper">{a.category}</div>
+                              <div class="badge-dot"></div>
+                              <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                            </div>
+                            <div class="blog-title-link">
+                              <div class="blog-title">{a.title}</div>
+                            </div>
+                          </div>
+                          <a href={a.url} class="blog-button w-inline-block">
+                            <div>Read article</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blog-button-icon blog-button-icon">
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.501 11.9977L5.00098 11.9977"></path>
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.9991 5.99763C12.9991 5.99763 18.999 10.4166 18.999 11.9977C18.999 13.5788 12.999 17.9977 12.999 17.9977"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {earliest.slice(0, 1).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+              </div>
+            </div>
+            <div class="doctor-slide w-slide">
+              <div to-top-2="" class="w-dyn-list">
+                <div role="list" class="blog-list w-dyn-items">
+                  {earliest.slice(1, 2).map((a) => (
+                    <div role="listitem" class="w-dyn-item">
+                      <div class="blog-card">
+                        <div class="blog-image-wrap">
+                          <a href={a.url} class="blog-image-link w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1276" height="1547" loading="lazy" alt={a.thumbnail.alt} class="blog-image"></a>
+                        </div>
+                        <div class="blog-card-body">
+                          <div class="blog-card-text">
+                            <div class="blog-meta">
+                              <div class="blog-meta-text upper">{a.category}</div>
+                              <div class="badge-dot"></div>
+                              <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                            </div>
+                            <div class="blog-title-link">
+                              <div class="blog-title">{a.title}</div>
+                            </div>
+                          </div>
+                          <a href={a.url} class="blog-button w-inline-block">
+                            <div>Read article</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blog-button-icon blog-button-icon">
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.501 11.9977L5.00098 11.9977"></path>
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.9991 5.99763C12.9991 5.99763 18.999 10.4166 18.999 11.9977C18.999 13.5788 12.999 17.9977 12.999 17.9977"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {earliest.slice(1, 2).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+              </div>
+            </div>
+            <div class="doctor-slide w-slide">
+              <div to-top-2="" class="w-dyn-list">
+                <div role="list" class="blog-list w-dyn-items">
+                  {earliest.slice(2, 3).map((a) => (
+                    <div role="listitem" class="w-dyn-item">
+                      <div class="blog-card">
+                        <div class="blog-image-wrap">
+                          <a href={a.url} class="blog-image-link w-inline-block"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1276" height="1547" loading="lazy" alt={a.thumbnail.alt} class="blog-image"></a>
+                        </div>
+                        <div class="blog-card-body">
+                          <div class="blog-card-text">
+                            <div class="blog-meta">
+                              <div class="blog-meta-text upper">{a.category}</div>
+                              <div class="badge-dot"></div>
+                              <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                            </div>
+                            <div class="blog-title-link">
+                              <div class="blog-title">{a.title}</div>
+                            </div>
+                          </div>
+                          <a href={a.url} class="blog-button w-inline-block">
+                            <div>Read article</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blog-button-icon blog-button-icon">
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M18.501 11.9977L5.00098 11.9977"></path>
+                              <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M12.9991 5.99763C12.9991 5.99763 18.999 10.4166 18.999 11.9977C18.999 13.5788 12.999 17.9977 12.999 17.9977"></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {earliest.slice(2, 3).length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+              </div>
+            </div>
+          </div>
+          <div class="blog-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+              <path d="M6.41699 14.0027H22.167" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.8339 21.0028C12.8339 21.0028 5.834 15.8473 5.83398 14.0027C5.83397 12.1581 12.834 7.00275 12.834 7.00275" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></div>
+          <div class="blog-slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+              <path d="M21.584 13.9973L5.83398 13.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M15.1661 6.9972C15.1661 6.9972 22.166 12.1527 22.166 13.9973C22.166 15.8419 15.166 20.9973 15.166 20.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></div>
+          <div class="doctor-slide-nav w-slider-nav w-round w-num"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+---
+import ServiceIcon from '../../ui/ServiceIcon.astro';
+import { getServices } from '../../../lib/cms';
+
+const services = await getServices();
+// Staggered reveal attributes used by the IX3 interactions.
+const reveal = ['to-top-0', 'to-top-2', 'to-top-4', 'to-top-6'];
+---
+<section class="section worm-ivory">
+  <div class="section-gap">
+    <div class="container">
+      <div class="section-header center">
+        <h2 class="section-heading center">Services Offered</h2>
+        <p to-top-2="" class="offered-intro">A wide range of women’s health services, tailored to each patient’s needs.</p>
+      </div>
+      <div class="service-grid">
+        {services.map((service, i) => (
+          <div class="service-card">
+            <div class="w-dyn-list">
+              <div role="list" class="w-dyn-items">
+                {[service].map((s) => (
+                  <div role="listitem" class="w-dyn-item">
+                    <div {...{ [reveal[i % reveal.length]]: '' }} class="offered-card">
+                      <div class="trust-icon-box brown"><ServiceIcon index={i} /></div>
+                      <div class="service-row-text">
+                        <div class="service-row-title">{s.name}</div>
+                        <p class="service-row-summary">{s.summary}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

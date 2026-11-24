@@ -1,0 +1,14 @@
+{
+  "services": {
+    "sort": ["number:asc"],
+    "populate": { "image": true, "gallery": true, "features": true, "cards": true, "tags": true, "seo": true }
+  },
+  "doctors": {
+    "sort": ["order:asc", "name:asc"],
+    "populate": { "photo": true, "stats": true, "expertise": true, "timeline": true, "seo": true }
+  },
+  "articles": {
+    "sort": ["publishDate:desc", "title:asc"],
+    "populate": { "thumbnail": true, "seo": true, "author": { "fields": ["name", "slug"], "populate": { "photo": true } } }
+  }
+}

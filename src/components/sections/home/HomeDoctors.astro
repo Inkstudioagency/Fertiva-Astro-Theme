@@ -1,0 +1,103 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getDoctors, getDoctorCategories } from '../../../lib/cms';
+
+const doctors = await getDoctors();
+const SLIDES = 6;
+const tabs = (await getDoctorCategories()).map((label) => {
+  const own = doctors.filter((d) => d.category === label);
+  const others = doctors.filter((d) => d.category !== label);
+  return { label, doctors: [...own, ...others].slice(0, Math.max(SLIDES, own.length)) };
+});
+// The original design uses a slightly different left-arrow class in each tab.
+const leftArrowClass = ['doctor-slider-arrow-main', 'doctor-slider-arrow', 'doctor-slider-arrow-v1'];
+---
+<section class="section primary-dark">
+  <div class="section-gap">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge dark">
+          <div class="badge-dot white"></div>
+          <div>Doctors</div>
+        </div>
+        <div class="doctor-heading-wrap">
+          <h2 heading-rebuild="" class="section-heading white">The leading health experts</h2>
+        </div>
+      </div>
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="doctor-tabs w-tabs">
+        <div to-top-2="" class="doctor-tab-menu w-tab-menu">
+          {tabs.map((tab, i) => (
+            <a data-w-tab={`Tab ${i + 1}`} class:list={['doctor-tab-link w-inline-block w-tab-link', i === 0 && 'w--current']}>
+              <div>{tab.label}</div>
+            </a>
+          ))}
+        </div>
+        <div to-top-2="" class="doctor-tab-content w-tab-content">
+          {tabs.map((tab, i) => (
+            <div data-w-tab={`Tab ${i + 1}`} class:list={['doctor-tab-pane w-tab-pane', i === 0 && 'w--tab-active']}>
+              <div class="doctor-pane-content">
+                <div data-delay="4000" data-animation="slide" class="doctor-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+                  <div class="doctor-slider-mask w-slider-mask">
+                    {tab.doctors.map((doctor) => (
+                      <div class="doctor-slide w-slide">
+                        <div class="w-dyn-list">
+                          <div role="list" class="w-dyn-items">
+                            {[doctor].map((d) => (
+                              <div role="listitem" class="w-dyn-item">
+                                <div class="doctor-card"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="doctor-card-image">
+                                  <div class="doctor-card-info">
+                                    <div class="doctor-card-top">
+                                      <h3 class="doctor-card-name">{d.name}</h3>
+                                      <a href={d.url} class="doctor-card-link w-inline-block"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="doctor-card-icon">
+                                          <path d="M7.50033 5.54193C7.50033 5.54193 13.2822 5.08966 14.0965 5.90386C14.9107 6.71806 14.4583 12.5 14.4583 12.5M13.7503 6.25L5.41699 14.5833" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <div class="demo">#</div>
+                                      </a>
+                                    </div>
+                                    <div class="doctor-card-stats">
+                                      <div class="doctor-stat">
+                                        <div class="doctor-stat-label">Exp</div>
+                                        <div class="doctor-stat-value">{d.experience}</div>
+                                      </div>
+                                      <div class="doctor-stat">
+                                        <div class="doctor-stat-label">Duty time</div>
+                                        <div class="doctor-stat-value">{d.dutyTime}</div>
+                                      </div>
+                                      <div class="doctor-stat">
+                                        <div class="doctor-stat-label">Surgeries</div>
+                                        <div class="doctor-stat-value">{d.surgeries}</div>
+                                      </div>
+                                    </div>
+                                    <div class="doctor-button-wrap">
+                                      <div class="doctor-button-wrapper">
+                                        <PrimaryButton href={d.url} label="View Doctor Details" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div class={`${leftArrowClass[i] ?? 'doctor-slider-arrow'} w-slider-arrow-left`}><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+                      <path d="M6.41699 14.0027H22.167" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M12.8339 21.0028C12.8339 21.0028 5.834 15.8473 5.83398 14.0027C5.83397 12.1581 12.834 7.00275 12.834 7.00275" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                  <div class="doctor-slider-arrow next w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+                      <path d="M21.584 13.9973L5.83398 13.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                      <path d="M15.1661 6.9972C15.1661 6.9972 22.166 12.1527 22.166 13.9973C22.166 15.8419 15.166 20.9973 15.166 20.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+                  <div class="doctor-slide-nav w-slider-nav w-round w-num"></div>
+                </div>
+                <PrimaryButton href="/doctors" label="View All Doctors" variant="with-border" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

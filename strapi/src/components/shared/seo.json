@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_shared_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "search",
+    "description": "Meta title and description for search engines and social sharing"
+  },
+  "options": {},
+  "attributes": {
+    "metaTitle": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 300
+    }
+  }
+}

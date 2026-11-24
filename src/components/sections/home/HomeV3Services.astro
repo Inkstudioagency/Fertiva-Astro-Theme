@@ -1,0 +1,107 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getServices } from '../../../lib/cms';
+
+const services = await getServices();
+// The mobile slider shows the first three services, as in the original design.
+const slides = services.slice(0, 3);
+---
+<section class="section">
+  <div class="section-gap">
+    <div class="service-sticky-wrap v3">
+      <div class="spec-sticky keep">
+        <div class="container">
+          <div class="srv-head v3">
+            <div class="section-header">
+              <div class="badge">
+                <div class="badge-dot"></div>
+                <div>Our services</div>
+              </div>
+              <div class="max-width-34">
+                <h2 class="section-heading">Specialized care for every stage of life</h2>
+              </div>
+            </div>
+            <div to-top-2="" class="srv-head-side">
+              <p class="profile-text">From fertility planning to pregnancy and newborn care, our specialists offer clear guidance and gentle support.</p>
+              <PrimaryButton href="/services" label="View All Services" />
+            </div>
+          </div>
+          <div class="srv-track-wrap hide-mobile w-dyn-list">
+            <div role="list" class="srv-track w-dyn-items">
+              {services.map((s) => (
+                <div role="listitem" class="srv-card w-dyn-item">
+                  <div class="srv-info">
+                    <div class="srv-num">{s.number}</div>
+                    <div class="location-details">
+                      <div class="srv-title">{s.name}</div>
+                      <p class="profile-text">{s.summary}</p>
+                    </div>
+                    <PrimaryButton href={s.url} label="View Details" />
+                  </div>
+                  <div class="srv-media">
+                    <a href={s.url} class="care-bg-image-wrap w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="care-bg-image">
+                      <div class="demo">#</div>
+                    </a>
+                    <div class="proc-shade"></div>
+                    <div class="srv-tags">
+                      <div class="home-hero-pill">{s.tags[0]}</div>
+                      <div class="home-hero-pill">{s.tags[1]}</div>
+                      <div class="home-hero-pill">{s.tags[2]}</div>
+                      <div class="home-hero-pill">{s.tags[3]}</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {services.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+          </div>
+          <div data-delay="4000" data-animation="slide" class="service-slider w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true">
+            <div class="service-slider-mask w-slider-mask">
+              {slides.map((service) => (
+                <div class="service-slide w-slide">
+                  <div class="srv-track-wrap w-dyn-list">
+                    <div role="list" class="srv-track w-dyn-items">
+                      {[service].map((s) => (
+                        <div role="listitem" class="srv-card w-dyn-item">
+                          <div class="srv-info">
+                            <div class="srv-num">{s.number}</div>
+                            <div class="location-details">
+                              <div class="srv-title">{s.name}</div>
+                              <p class="profile-text">{s.summary}</p>
+                            </div>
+                            <PrimaryButton href={s.url} label="View Details" />
+                          </div>
+                          <div class="srv-media">
+                            <a href={s.url} class="care-bg-image-wrap w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="care-bg-image">
+                              <div class="demo">#</div>
+                            </a>
+                            <div class="proc-shade"></div>
+                            <div class="srv-tags">
+                              <div class="home-hero-pill">{s.tags[0]}</div>
+                              <div class="home-hero-pill">{s.tags[1]}</div>
+                              <div class="home-hero-pill">{s.tags[2]}</div>
+                              <div class="home-hero-pill">{s.tags[3]}</div>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div class="service-slider-button left w-slider-arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+                <path d="M6.41699 14.0027H22.167" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M12.8339 21.0028C12.8339 21.0028 5.834 15.8473 5.83398 14.0027C5.83397 12.1581 12.834 7.00275 12.834 7.00275" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></div>
+            <div class="service-slider-button right w-slider-arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 28 28" fill="none" class="doctor-arrow-icon">
+                <path d="M21.584 13.9973L5.83398 13.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15.1661 6.9972C15.1661 6.9972 22.166 12.1527 22.166 13.9973C22.166 15.8419 15.166 20.9973 15.166 20.9973" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></div>
+            <div class="doctor-slide-nav w-slider-nav w-round w-num"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import ContactHero from '../components/sections/contact/ContactHero.astro';
+import ContactForm from '../components/sections/contact/ContactForm.astro';
+import ContactLocations from '../components/sections/contact/ContactLocations.astro';
+import Faq from '../components/sections/shared/Faq.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5672';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Contact V1 - Fertiva" description="Get in touch with Fertiva to book an appointment, ask a question or find our clinic address, phone number and opening hours.">
+  <div class="page-wrapper">
+    <ContactHero />
+    <div class="main">
+      <ContactForm />
+      <ContactLocations />
+      <Faq />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

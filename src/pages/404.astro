@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import NotFoundHero from '../components/sections/utility/NotFoundHero.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5666';
+---
+
+<BaseLayout wfPage={WF_PAGE} noindex title="404 - Fertiva" description="The page you are looking for could not be found. Go back to the Fertiva homepage to explore our services, doctors and booking options.">
+  <div class="page-wrapper">
+    <NotFoundHero />
+    <div class="main">
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

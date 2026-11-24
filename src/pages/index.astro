@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import HomeHero from '../components/sections/home/HomeHero.astro';
+import HomeAbout from '../components/sections/home/HomeAbout.astro';
+import HomeServices from '../components/sections/home/HomeServices.astro';
+import HomeSpecialty from '../components/sections/home/HomeSpecialty.astro';
+import HomeHowItWorks from '../components/sections/home/HomeHowItWorks.astro';
+import HomeWhyUs from '../components/sections/home/HomeWhyUs.astro';
+import Testimonials from '../components/sections/shared/Testimonials.astro';
+import HomeDoctors from '../components/sections/home/HomeDoctors.astro';
+import BlogInsights from '../components/sections/shared/BlogInsights.astro';
+import Faq from '../components/sections/shared/Faq.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b565f';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Fertiva - Women's Health and Fertility Clinic" description="Fertiva is an Astro theme for women's health clinics, covering pregnancy care, pediatrics, specialist doctors and easy online appointment booking.">
+  <div class="page-wrapper">
+    <HomeHero />
+    <div class="main">
+      <HomeAbout />
+      <HomeServices />
+      <HomeSpecialty />
+      <HomeHowItWorks />
+      <HomeWhyUs />
+      <Testimonials />
+      <HomeDoctors />
+      <BlogInsights />
+      <Faq />
+      <Cta wfPage={WF_PAGE} mapNewTab />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

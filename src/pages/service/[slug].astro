@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/global/Footer.astro';
+import DetailNav from '../../components/sections/shared/DetailNav.astro';
+import ServiceDetailBody from '../../components/sections/services/ServiceDetailBody.astro';
+import Cta from '../../components/sections/shared/Cta.astro';
+import { getServices, type Service } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const services = await getServices();
+  return services.map((service) => ({ params: { slug: service.slug }, props: { service } }));
+}
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const WF_PAGE = '6b03d34f707687d1b49b5668';
+---
+
+<BaseLayout
+  wfPage={WF_PAGE}
+  title={service.seo.title || `${service.name} - Fertiva`}
+  description={service.seo.description || service.summary}
+  image={service.image.src}
+>
+  <div class="page-wrapper">
+    <DetailNav />
+    <div class="main">
+      <ServiceDetailBody service={service} />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

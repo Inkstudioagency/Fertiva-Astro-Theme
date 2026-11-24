@@ -1,0 +1,66 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getDoctors, getDoctorCategories } from '../../../lib/cms';
+
+const doctors = await getDoctors();
+const tabs = (await getDoctorCategories()).map((label) => ({ label, doctors: doctors.filter((d) => d.category === label) }));
+---
+<section class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="w-tabs">
+        <div to-top-2="" class="doctors-tab-menu w-tab-menu">
+          {tabs.map((tab, i) => (
+            <a data-w-tab={`Tab ${i + 1}`} class:list={['doctor-tab-link light w-inline-block w-tab-link', i === 0 && 'w--current']}>
+              <div>{tab.label}</div>
+            </a>
+          ))}
+        </div>
+        <div class="w-tab-content">
+          {tabs.map((tab, i) => (
+            <div data-w-tab={`Tab ${i + 1}`} class:list={['w-tab-pane', i === 0 && 'w--tab-active']}>
+              <div class="w-dyn-list">
+                <div role="list" class="doctors-grid w-dyn-items">
+                  {tab.doctors.map((d) => (
+                    <div role="listitem" class="w-dyn-item">
+                      <div to-top-2="" class="doctor-card"><img src={d.photo.src} srcset={d.photo.srcset} loading="lazy" width="1644" height="2024" alt={d.photo.alt} class="doctor-card-image">
+                        <div class="doctor-card-info">
+                          <div class="doctor-card-top">
+                            <div class="doctor-card-name">{d.name}</div>
+                            <a href={d.url} aria-label="View doctor profile" class="doctor-card-link w-inline-block"><svg fill="none" viewBox="0 0 20 20" width="100%" xmlns="http://www.w3.org/2000/svg" class="doctor-card-icon doctor-card-icon">
+                                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.25" stroke="currentColor" d="M7.50033 5.54193C7.50033 5.54193 13.2822 5.08966 14.0965 5.90386C14.9107 6.71806 14.4583 12.5 14.4583 12.5M13.7503 6.25L5.41699 14.5833"></path>
+                              </svg></a>
+                          </div>
+                          <div class="doctor-card-stats">
+                            <div class="doctor-stat">
+                              <div class="doctor-stat-label">Exp</div>
+                              <div class="doctor-stat-value">{d.experience}</div>
+                            </div>
+                            <div class="doctor-stat">
+                              <div class="doctor-stat-label">Duty time</div>
+                              <div class="doctor-stat-value">{d.dutyTime}</div>
+                            </div>
+                            <div class="doctor-stat">
+                              <div class="doctor-stat-label">Surgeries</div>
+                              <div class="doctor-stat-value">{d.surgeries}</div>
+                            </div>
+                          </div>
+                          <div class="doctor-book-wrap">
+                            <div class="doctor-book-inner">
+                              <PrimaryButton href={d.url} label="View Details" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                {tab.doctors.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

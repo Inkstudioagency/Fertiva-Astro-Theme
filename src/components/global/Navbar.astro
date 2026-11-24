@@ -1,0 +1,114 @@
+---
+/**
+ * Site navigation (Webflow `w-nav` — mobile menu & hover dropdown are driven by webflow.js).
+ * Links come from `src/config/menu.json`.
+ * `variant` mirrors the two original navbar variants: "base" and "nav-v1".
+ */
+import menu from '../../config/menu.json';
+import PrimaryButton from '../ui/PrimaryButton.astro';
+import { isCurrentPath } from '../../lib/utils';
+
+interface Props {
+  variant?: 'base' | 'nav-v1';
+}
+
+const { variant = 'base' } = Astro.props;
+const path = Astro.url.pathname;
+const cur = (href: string) => isCurrentPath(href, path);
+const { dropdown } = menu;
+---
+
+<div
+  data-wf--navigation-var--variant={variant}
+  data-animation="default"
+  data-collapse="medium"
+  data-duration="400"
+  data-easing="ease"
+  data-easing2="ease"
+  role="banner"
+  class="navbar w-nav"
+>
+  <div class:list={['container', variant === 'nav-v1' && 'w-variant-c9a6533f-8b70-4893-7fd5-e9980d4d4453', 'w-container']}>
+    <div class="nav-item-wrap">
+      <a href="/" aria-current={cur('/') ? 'page' : undefined} class:list={['brand-link w-nav-brand', cur('/') && 'w--current']}><img width="460" height="116" alt="Fertiva women's health clinic logo" src="/images/Frame-265.webp" loading="lazy" class="brand-logo" /></a>
+      <nav role="navigation" class="nav-menu w-nav-menu">
+        <div class="navlink-wrap">
+          {
+            menu.main.map((link) => (
+              <a href={link.href} aria-current={cur(link.href) ? 'page' : undefined} class:list={['navllink w-nav-link', cur(link.href) && 'w--current']}>
+                {link.label}
+              </a>
+            ))
+          }
+          <div data-delay="0" data-hover="true" class="nav-dropdown w-dropdown">
+            <div class="navlink-v1 w-dropdown-toggle">
+              <div>{dropdown.label}</div>
+              <div class="nav-link-icon w-icon-dropdown-toggle"></div>
+            </div>
+            <nav class="nav-dropdown-content main w-dropdown-list">
+              <div class="dropdown-menu-wrap">
+                <div class="dropdown-group-wrap">
+                  <div class="nav-dropdown-top-block">
+                    <div class="dropdown-menu-group">
+                      {
+                        dropdown.groups.map((group) => (
+                          <div class="nav-menu-group">
+                            <div class="dropdown-subtitle">{group.title}</div>
+                            <div class="dropdown-menu-main">
+                              {group.links.map((link) => (
+                                <a
+                                  href={link.href}
+                                  aria-current={cur(link.href) ? 'page' : undefined}
+                                  class:list={['dropdown-link', !('plain' in link && link.plain) && 'w-dropdown-link', cur(link.href) && 'w--current']}
+                                >
+                                  {link.label}
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        ))
+                      }
+                    </div>
+                  </div>
+                  <div class="dropdown-menu-line"></div>
+                  <div class="dropdown-menu-main utility-row">
+                    {
+                      dropdown.utility.map((link) => (
+                        <a
+                          href={link.href}
+                          aria-current={cur(link.href) ? 'page' : undefined}
+                          class:list={['dropdown-link', !('plain' in link && link.plain) && 'w-dropdown-link', cur(link.href) && 'w--current']}
+                        >
+                          {link.label}
+                        </a>
+                      ))
+                    }
+                  </div>
+                </div>
+                <div class="dropdown-menu-right">
+                  <img
+                    src="/images/Container-55.webp"
+                    loading="lazy"
+                    width="864"
+                    height="640"
+                    alt="Pregnant woman lying on a medical examination chair having an ultrasound, holding hands with a man sitting beside her, both looking at each other with smiles."
+                    srcset="/images/Container-55-p-500.webp 500w, /images/Container-55-p-800.webp 800w, /images/Container-55.webp 864w"
+                    sizes="100vw"
+                    class="menu-image"
+                  />
+                  <a href={dropdown.promo.href} class="menu-image-badge">{dropdown.promo.label}</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </nav>
+      <div class="nav-button-wrap">
+        <PrimaryButton href={menu.cta.href} label={menu.cta.label} />
+      </div>
+      <div class="menu-button w-nav-button">
+        <div class="w-icon-nav-menu"></div>
+      </div>
+    </div>
+  </div>
+</div>

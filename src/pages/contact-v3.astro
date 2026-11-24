@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import ContactV3Hero from '../components/sections/contact/ContactV3Hero.astro';
+import ContactV3Trusted from '../components/sections/contact/ContactV3Trusted.astro';
+import FaqV3 from '../components/sections/shared/FaqV3.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b567f';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Contact V3 - Fertiva" description="Reach Fertiva for appointments, test results and general support. Fill in the form and our care team will get back to you as soon as possible.">
+  <div class="page-wrapper">
+    <ContactV3Hero />
+    <div class="main">
+      <ContactV3Trusted />
+      <FaqV3 />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

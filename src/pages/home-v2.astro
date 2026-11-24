@@ -1,0 +1,36 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import HomeV2Hero from '../components/sections/home/HomeV2Hero.astro';
+import HomeV2About from '../components/sections/home/HomeV2About.astro';
+import HomeV2Services from '../components/sections/home/HomeV2Services.astro';
+import HomeV2Specialty from '../components/sections/home/HomeV2Specialty.astro';
+import HomeV2HowItWorks from '../components/sections/home/HomeV2HowItWorks.astro';
+import HomeV2WhyUs from '../components/sections/home/HomeV2WhyUs.astro';
+import PatientStories from '../components/sections/shared/PatientStories.astro';
+import HomeV2Doctors from '../components/sections/home/HomeV2Doctors.astro';
+import BlogV2 from '../components/sections/shared/BlogV2.astro';
+import FaqV2 from '../components/sections/shared/FaqV2.astro';
+import CtaV2 from '../components/sections/shared/CtaV2.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5674';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Home V2 - Fertiva" description="A modern homepage for women's health and maternity clinics, with care services, doctor profiles, patient stories and a simple booking flow.">
+  <div class="page-wrapper">
+    <HomeV2Hero />
+    <div class="main">
+      <HomeV2About />
+      <HomeV2Services />
+      <HomeV2Specialty />
+      <HomeV2HowItWorks />
+      <HomeV2WhyUs />
+      <PatientStories />
+      <HomeV2Doctors />
+      <BlogV2 />
+      <FaqV2 />
+      <CtaV2 />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

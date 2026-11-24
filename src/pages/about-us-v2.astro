@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import AboutV2Hero from '../components/sections/about/AboutV2Hero.astro';
+import AboutV2Intro from '../components/sections/about/AboutV2Intro.astro';
+import AboutV2Impact from '../components/sections/about/AboutV2Impact.astro';
+import AboutV2Values from '../components/sections/about/AboutV2Values.astro';
+import AboutV2Journey from '../components/sections/about/AboutV2Journey.astro';
+import PatientStories from '../components/sections/shared/PatientStories.astro';
+import BlogV2 from '../components/sections/shared/BlogV2.astro';
+import FaqV2 from '../components/sections/shared/FaqV2.astro';
+import CtaV2 from '../components/sections/shared/CtaV2.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5676';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="About Us V2 - Fertiva" description="Follow Fertiva's journey from one small clinic to trusted family care, with the milestones, impact and values that guide our care every day.">
+  <div class="page-wrapper">
+    <AboutV2Hero />
+    <div class="main">
+      <AboutV2Intro />
+      <AboutV2Impact />
+      <AboutV2Values />
+      <AboutV2Journey />
+      <PatientStories />
+      <BlogV2 />
+      <FaqV2 />
+      <CtaV2 />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

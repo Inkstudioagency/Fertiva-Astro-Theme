@@ -1,0 +1,94 @@
+---
+import type { Service } from '../../../lib/cms';
+import { blocksToHtml, cardHtml } from '../../../lib/blocks';
+
+interface Props {
+  service: Service;
+}
+
+const { service } = Astro.props;
+const gallery = [0, 1].map((i) => service.gallery[i] ?? { src: '', alt: '' });
+---
+<section class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <div class="service-intro">
+        <div class="service-hero-header">
+          <h1 class="service-title">{service.name}</h1>
+          <p class="service-summary">{service.summary}</p>
+        </div><img src={service.image.src} srcset={service.image.srcset} loading="lazy" width="2060" height="1296" alt={service.image.alt} class="service-hero-image">
+      </div>
+      <div class="service-layout">
+        <div class="service-main">
+          <div to-top-0="" class="blog-rich-text w-richtext" set:html={blocksToHtml(service.overview)}></div>
+          <div class="profile-block">
+            <div class="max-width-26">
+              <h2 to-top-0="" class="profile-section-title">{service.cardsHeading}</h2>
+            </div>
+            <div class="service-card-grid">
+              <div to-top-0="" class="offered-card">
+                <div class="trust-icon-box brown"><svg fill="none" viewBox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg" class="trust-icon trust-icon">
+                    <path stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M25.9501 5.32456C22.3745 3.13133 19.2538 4.01517 17.3792 5.42304C16.6104 6.00031 16.2261 6.28893 16 6.28893C15.7738 6.28893 15.3896 6.00031 14.6208 5.42304C12.7461 4.01517 9.62541 3.13133 6.04988 5.32456C1.35738 8.20293 0.295584 17.6988 11.1193 25.7101C13.1809 27.2361 14.2117 27.9991 16 27.9991C17.7882 27.9991 18.819 27.2361 20.8806 25.7101C31.7044 17.6988 30.6425 8.20293 25.9501 5.32456Z"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M21.3333 17.3333H20C19.3929 17.3333 18.754 17.3803 18.2092 16.9619C18.0015 16.8023 17.8636 16.5817 17.588 16.1408L15.3333 12L11.3333 18.6667L9.25784 15.7761C8.91629 15.3663 8.58329 14.9507 8.13127 14.7863C7.80252 14.6667 7.42389 14.6667 6.66667 14.6667H4"></path>
+                  </svg></div>
+                <div class="service-card-rich-text w-richtext" set:html={cardHtml(service.cards[0])}></div>
+              </div>
+              <div to-top-2="" class="offered-card">
+                <div class="trust-icon-box brown"><svg fill="none" viewBox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg" class="trust-icon trust-icon">
+                    <path stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M13.3142 8C13.5238 6.12527 12.0061 4 8.76188 4C5.39564 4 2.66675 7.28324 2.66675 11.3333C2.66675 15.3835 4.71859 18.6667 8.08483 18.6667C10.24 18.6667 11.3808 16.9945 11.1411 15.5452"></path>
+                    <path stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M9.33325 10.6665C11.3333 10.666 13.9998 11.3274 13.9998 15.5198C13.9998 21.0665 11.3325 23.1465 13.3339 27.9998M22.6666 10.6665C20.6665 10.666 18.0001 11.3274 18.0001 15.5198C18.0001 21.0665 20.6674 23.1465 18.6659 27.9998"></path>
+                    <path stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M18.6858 8C18.4762 6.12527 19.994 4 23.2382 4C26.6044 4 29.3333 7.28324 29.3333 11.3333C29.3333 15.3835 27.2814 18.6667 23.9152 18.6667C21.6541 18.6667 20.5096 16.8261 20.9044 15.3333"></path>
+                  </svg></div>
+                <div class="service-card-rich-text w-richtext" set:html={cardHtml(service.cards[1])}></div>
+              </div>
+              <div to-top-0="" class="offered-card">
+                <div class="trust-icon-box brown"><svg fill="none" viewBox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg" class="trust-icon trust-icon">
+                    <path stroke-width="2" stroke="currentColor" d="M28 9.3335L28 22.6668C28 26.3487 25.0152 29.3335 21.3333 29.3335L10.6667 29.3335C6.98477 29.3335 4 26.3487 4 22.6668L4 9.3335C4 5.6516 6.98477 2.66683 10.6667 2.66683L21.3333 2.66683C25.0152 2.66683 28 5.6516 28 9.3335Z"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M16 6.66699V18.667"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M20 9.3335C19.4845 10.1583 18.7787 10.6668 18 10.6668C17.2213 10.6668 16.5155 10.1583 16 9.3335C15.4845 10.1583 14.7787 10.6668 14 10.6668C13.2213 10.6668 12.5154 10.1583 12 9.3335"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M9.33337 13.3335C10.1924 14.1583 11.3689 14.6668 12.6667 14.6668C13.9644 14.6668 15.141 14.1583 16 13.3335C16.8591 14.1583 18.0356 14.6668 19.3334 14.6668C20.6311 14.6668 21.8076 14.1583 22.6667 13.3335"></path>
+                  </svg></div>
+                <div class="service-card-rich-text w-richtext" set:html={cardHtml(service.cards[2])}></div>
+              </div>
+              <div to-top-2="" class="offered-card">
+                <div class="trust-icon-box brown"><svg fill="none" viewBox="0 0 32 32" width="100%" xmlns="http://www.w3.org/2000/svg" class="trust-icon trust-icon">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M5.67027 27.0695C7.54045 28.6668 10.3603 28.6668 16 28.6668C21.6396 28.6668 24.4594 28.6668 26.3296 27.0695C26.5952 26.8427 26.8425 26.5954 27.0693 26.3298C28.6666 24.4596 28.6666 21.6398 28.6666 16.0002C28.6666 10.3605 28.6666 7.5407 27.0693 5.67051C26.8425 5.40494 26.5952 5.1576 26.3296 4.93079C24.4594 3.3335 21.6396 3.3335 16 3.3335C10.3603 3.3335 7.54045 3.3335 5.67027 4.93079C5.40469 5.1576 5.15736 5.40494 4.93055 5.67051C3.33325 7.5407 3.33325 10.3605 3.33325 16.0002C3.33325 21.6398 3.33325 24.4596 4.93055 26.3298C5.15736 26.5954 5.40469 26.8427 5.67027 27.0695Z"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M4 20.667H28"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" d="M22.6666 12.0003H20.6666L17.9999 8.66699L13.9999 15.3337L11.3333 12.0003H9.33325"></path>
+                  </svg></div>
+                <div class="service-card-rich-text w-richtext" set:html={cardHtml(service.cards[3])}></div>
+              </div>
+            </div>
+          </div>
+          <div to-top-0="" class="blog-rich-text w-richtext" set:html={blocksToHtml(service.cost)}></div>
+          <div class="service-gallery"><img src={gallery[0].src} srcset={gallery[0].srcset} loading="lazy" width="1462" height="1200" to-top-0="" alt={gallery[0].alt} class="service-gallery-image"><img src={gallery[1].src} srcset={gallery[1].srcset} loading="lazy" width="1462" height="1200" to-top-2="" alt={gallery[1].alt} class="service-gallery-image"></div>
+          <div to-top-0="" class="blog-rich-text w-richtext" set:html={blocksToHtml(service.closing)}></div>
+        </div>
+        <div class="service-sidebar">
+          <div to-top-0="" class="profile-card dark">
+            <h2 class="values-card-title">Need a Doctor?</h2>
+            <div>
+              <div class="side-form w-form">
+                <form id="wf-form-Service-Details-Form" name="wf-form-Service-Details-Form" data-name="Service Details Form" method="get" class="service-contact-form" data-wf-page-id="6b03d34f707687d1b49b5668" data-wf-element-id="30dcdf64-a1bb-8b97-5c92-782e9459a210">
+                  <div class="side-fields"><input class="side-input w-input" maxlength="256" name="callback-name" data-name="callback-name" placeholder="Write your name" type="text" id="callback-name" required=""><input class="side-input w-input" maxlength="256" name="callback-phone" data-name="callback-phone" placeholder="Write your phone number" type="tel" id="callback-phone" required=""><textarea placeholder="How can we help?" maxlength="5000" id="callback-message" name="callback-message" data-name="callback-message" class="side-input area w-input"></textarea></div><input type="submit" data-wait="Please wait..." class="cta-submit service w-button" value="Book Appointment">
+                </form>
+                <div class="success-message w-form-done">
+                  <div>Thanks! A care advisor will call you back shortly.</div>
+                </div>
+                <div class="error-message w-form-fail">
+                  <div>We couldn&#x27;t send your request. Please try again.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div to-top-2="" class="contact-card-v1">
+            <div class="quote-box-v1">
+              <p class="quote-text">{service.quote}</p>
+              <div class="contact-label">{service.quoteAuthor}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

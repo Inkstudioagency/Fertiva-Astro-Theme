@@ -1,0 +1,36 @@
+---
+interface Props {
+  variant?: 'base' | 'body-color';
+}
+
+const { variant = 'base' } = Astro.props;
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<section data-wf--cta-v3--variant={variant} class:list={['section worm-ivory', variant !== 'base' && 'w-variant-b5942dcb-bb0a-56fb-662b-e6274eafb75b']}>
+  <div class="section-gap">
+    <div class="container">
+      <div to-top-2="" class="cta-v3-card">
+        <div class="cta-v3-content">
+          <div class="cta-v3-top">
+            <div class="cta-v3">
+              <h2 class="cta-title large">Book a visit in under two minutes</h2>
+              <p class="profile-text ivory">Same-week appointments across our women’s health specialties, with tests, scans and results handled on site.</p>
+            </div>
+            <PrimaryButton href="/contact-v1" label="Book Appointment" />
+          </div>
+          <div class="cta-v3-info">
+            <div class="cta-v3-col">
+              <p class="cta-detail-label muted">Hours</p>
+              <p class="profile-text white">Mon – Sat, 8:00 AM – 6:00 PM<br>Emergency care 24/7</p>
+            </div>
+            <div class="cta-v3-col">
+              <p class="cta-detail-label muted">Visit</p>
+              <p class="profile-text white">House 12, Road 90, Gulshan 2<br>Dhaka 1212, Bangladesh</p>
+            </div>
+          </div>
+        </div>
+        <div class="cta-v3-media"><img width="2560" height="2320" alt="Doctor showing ultrasound scans to a smiling patient" src="/images/Image-52.webp" loading="lazy" srcset="/images/Image-52-p-500.webp 500w, /images/Image-52-p-800.webp 800w, /images/Image-52-p-1080.webp 1080w, /images/Image-52-p-1600.webp 1600w, /images/Image-52-p-2000.webp 2000w, /images/Image-52.webp 2560w" sizes="(max-width: 2560px) 100vw, 2560px" class="care-bg-image"></div>
+      </div>
+    </div>
+  </div>
+</section>

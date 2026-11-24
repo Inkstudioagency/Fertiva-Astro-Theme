@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PasswordContent from '../components/sections/utility/PasswordContent.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5667';
+---
+
+<BaseLayout wfPage={WF_PAGE} noindex title="Password - Fertiva" description="This page is password protected. Enter the password to view its content on the Fertiva website.">
+  <PasswordContent />
+</BaseLayout>

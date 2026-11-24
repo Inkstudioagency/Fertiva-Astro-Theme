@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_doctor_timeline_entries",
+  "info": {
+    "displayName": "Timeline entry",
+    "icon": "clock",
+    "description": "A step in the doctor's education or career"
+  },
+  "options": {},
+  "attributes": {
+    "years": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/global/Footer.astro';
+import DetailNav from '../../components/sections/shared/DetailNav.astro';
+import DoctorProfile from '../../components/sections/doctors/DoctorProfile.astro';
+import DoctorServices from '../../components/sections/doctors/DoctorServices.astro';
+import Cta from '../../components/sections/shared/Cta.astro';
+import { getDoctors, type Doctor } from '../../lib/cms';
+
+export async function getStaticPaths() {
+  const doctors = await getDoctors();
+  return doctors.map((doctor) => ({ params: { slug: doctor.slug }, props: { doctor } }));
+}
+
+interface Props {
+  doctor: Doctor;
+}
+
+const { doctor } = Astro.props;
+const WF_PAGE = '6b03d34f707687d1b49b5669';
+---
+
+<BaseLayout
+  wfPage={WF_PAGE}
+  title={doctor.seo.title || `${doctor.name} - Fertiva`}
+  description={doctor.seo.description || doctor.specialtyTitle}
+  image={doctor.photo.src}
+>
+  <div class="page-wrapper">
+    <DetailNav />
+    <div class="main">
+      <DoctorProfile doctor={doctor} />
+      <DoctorServices />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

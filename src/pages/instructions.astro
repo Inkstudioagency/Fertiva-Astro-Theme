@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import InstructionsContent from '../components/sections/utility/InstructionsContent.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5665';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Instructions - Fertiva" description="Learn how to customize the Fertiva Astro theme: Strapi content, navigation, page sections and animations.">
+  <div class="page-wrapper">
+    <InstructionsContent />
+    <div class="main">
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

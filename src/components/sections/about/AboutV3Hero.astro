@@ -1,0 +1,30 @@
+---
+import Navbar from '../../global/Navbar.astro';
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<div class="hero-wrap">
+  <Navbar variant="base" />
+  <section class="hero-section">
+    <div class="section-gap about-hero-v3">
+      <div class="container">
+        <div class="about-hero-header v3">
+          <div class="about-hero-header-left">
+            <div class="badge about">
+              <div class="badge-dot"></div>
+              <div>About us</div>
+            </div>
+            <h1 class="about-heading-main primary-color">Get in Touch With Our Medical Experts</h1>
+          </div>
+          <div class="about-hero-right">
+            <p class="paragraph-regular">Since 2014 we’ve helped more than 4,700 families through fertility, pregnancy and every stage of women’s health — with specialists who take the time to listen.</p>
+            <div class="hero-button-wrap">
+              <PrimaryButton href="/contact-v1" label="Book Appointment" />
+              <PrimaryButton href="/services" label="Explore Services" variant="white" />
+            </div>
+          </div>
+        </div>
+        <div class="about-hero-image-wrap"><img src="/images/Subtract-3_1.webp" loading="lazy" width="2560" height="1144" alt="Group of five diverse medical professionals standing outside a modern building, all wearing white lab coats with two men and three women smiling and posing with arms crossed or holding a folder." srcset="/images/Subtract-3_1-p-500.webp 500w, /images/Subtract-3_1-p-800.webp 800w, /images/Subtract-3_1-p-1080.webp 1080w, /images/Subtract-3_1-p-1600.webp 1600w, /images/Subtract-3_1-p-2000.webp 2000w, /images/Subtract-3_1.webp 2560w" sizes="(max-width: 2560px) 100vw, 2560px" class="about-hero-image"></div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,56 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import { getServices } from '../../../lib/cms';
+
+// Services are shown in groups of two.
+const services = await getServices();
+const groups = Array.from({ length: Math.ceil(services.length / 2) }, (_, i) => services.slice(i * 2, i * 2 + 2));
+---
+<section class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <div class="support-header">
+        <div class="section-header">
+          <div class="badge">
+            <div class="badge-dot"></div>
+            <div>Support</div>
+          </div>
+          <div class="max-width-36">
+            <h2 class="section-heading narrow">Support That Goes Beyond Clinical Care</h2>
+          </div>
+        </div>
+        <p to-top-2="" class="support-intro">We focus not only on treatment but also on education, comfort, and long-term well-being.</p>
+      </div>
+      <div to-top-2="" class="support-sticky">
+        {groups.map((group) => (
+          <div class="service-group">
+            <div class="w-dyn-list">
+              <div role="list" class="support-track w-dyn-items">
+                {group.map((s) => (
+                  <div role="listitem" class="w-dyn-item">
+                    <div class="support-card">
+                      <div class="support-card-body">
+                        <div class="support-card-top">
+                          <h3 class="support-card-title">{s.name}</h3>
+                          <div class="support-card-number">{s.number}</div>
+                        </div>
+                        <div class="support-card-row">
+                          <p class="service-row-summary">{s.summary}</p>
+                          <PrimaryButton href={s.url} label="View service" />
+                        </div>
+                      </div>
+                      <a href={s.url} class="service-image-link-wrap w-inline-block"><img src={s.image.src} srcset={s.image.srcset} loading="lazy" width="2060" height="1296" alt={s.image.alt} class="support-card-image">
+                        <div class="demo">#</div>
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {group.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

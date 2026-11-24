@@ -1,0 +1,48 @@
+---
+import Navbar from '../../global/Navbar.astro';
+import type { Article } from '../../../lib/cms';
+import { formatDate } from '../../../lib/utils';
+
+interface Props {
+  article: Article;
+}
+
+const { article } = Astro.props;
+---
+<div class="blog-hero-wrap">
+  <div class="blog-hero">
+    <Navbar variant="base" /><img src={article.thumbnail.src} srcset={article.thumbnail.srcset} loading="lazy" width="1547" height="1276" alt={article.thumbnail.alt} class="blog-hero-image">
+    <div class="blog-hero-overlay"></div>
+    <div class="blog-hero-layer">
+      <div class="container">
+        <div class="blog-hero-content">
+          <div class="blog-hero-top">
+            <div data-wf-target="[[[&quot;6b03d34f707687d1b49b566a&quot;,&quot;f594aff8-5963-e69d-56e3-a189a7d7666f&quot;],[]]]">
+              <a href="/blog" class="profile-back-link glass w-inline-block"><svg fill="none" viewBox="0 0 20 20" width="100%" xmlns="http://www.w3.org/2000/svg" class="profile-small-icon profile-small-icon">
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.25" stroke="currentColor" d="M4.58292 10.002L15.8329 10.002"></path>
+                  <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.25" stroke="currentColor" d="M9.16702 15.002C9.16702 15.002 4.16709 11.3195 4.16708 10.0019C4.16707 8.68433 9.1671 5.00196 9.1671 5.00196"></path>
+                </svg>
+                <div>All blogs</div>
+              </a>
+            </div>
+            <h1 class="blog-hero-title">{article.title}</h1>
+          </div>
+          <div class="blog-hero-meta">
+            <div class="blog-hero-meta-item">
+              <div class="blog-hero-meta-label">Subject</div>
+              <div>{article.category}</div>
+            </div>
+            <div class="blog-hero-meta-item">
+              <div class="blog-hero-meta-label">Read time</div>
+              <div>{article.readTime}</div>
+            </div>
+            <div class="blog-hero-meta-item">
+              <div class="blog-hero-meta-label">Published</div>
+              <div>{formatDate(article.publishDate)}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

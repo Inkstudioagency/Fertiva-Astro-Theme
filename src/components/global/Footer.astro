@@ -1,0 +1,88 @@
+---
+/**
+ * Global footer. Link columns, legal links and social profiles come from `src/config/menu.json`;
+ * credits come from `src/config/site.json`.
+ */
+import menu from '../../config/menu.json';
+import site from '../../config/site.json';
+import PrimaryButton from '../ui/PrimaryButton.astro';
+import SocialIcon from '../ui/SocialIcon.astro';
+import { isCurrentPath } from '../../lib/utils';
+
+const path = Astro.url.pathname;
+const cur = (href: string) => isCurrentPath(href, path);
+const { footer } = menu;
+// Staggered reveal attributes used by the Webflow IX3 interactions.
+const columnReveal = ['to-top-2', 'to-top-4', 'to-top-6'];
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-main">
+          <div class="footer-main-top">
+            <div to-top-0="" class="footer-brand">
+              <a href="/" aria-current={cur('/') ? 'page' : undefined} class:list={['footer-logo w-inline-block', cur('/') && 'w--current']}><img src="/images/Brand-1.webp" loading="lazy" width="764" height="192" alt="Fertiva logo with a circular emblem and the Fertiva name in white" class="footer-brand-logo" /></a>
+              <p class="footer-text">Caring, specialist-led fertility and women's health support, from your first consultation to the day you meet your baby.</p>
+            </div>
+            <div class="footer-links">
+              {
+                footer.columns.map((column, i) => (
+                  <div {...{ [columnReveal[i] ?? 'to-top-6']: '' }} class="footer-column">
+                    <div class="footer-column-title">{column.title}</div>
+                    <div class="footer-link-list">
+                      {column.links.map((link) => (
+                        <a href={link.href} aria-current={cur(link.href) ? 'page' : undefined} class:list={['footer-link', cur(link.href) && 'w--current']}>
+                          {link.label}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))
+              }
+            </div>
+          </div>
+          <div to-top-6="" class="footer-bottom">
+            <p class="footer-copyright">
+              © Copyright {year} | Design &amp; Developed By <a href={site.credits.designer.href} target="_blank" class="footer-credit-link">{site.credits.designer.label}</a> | Powered By <a href={site.credits.poweredBy.href} target="_blank" class="footer-credit-link">{site.credits.poweredBy.label}</a>
+            </p>
+            <div class="footer-legal">
+              {footer.legal.map((link) => <a href={link.href} class="footer-legal-link">{link.label}</a>)}
+            </div>
+          </div>
+        </div>
+        <div to-top-6="" class="footer-card">
+          <div class="footer-card-body">
+            <div class="cta-stack">
+              <h3 class="footer-card-title">Comprehensive women’s health</h3>
+              <p class="footer-text muted">Calm, specialist-led care for gynecology, pregnancy and family planning, designed around clarity and trust.</p>
+            </div>
+            <PrimaryButton href={menu.cta.href} label={menu.cta.label} />
+          </div>
+          <div class="footer-social">
+            {
+              footer.social.map((social) => (
+                <a href={social.href} aria-label={social.label} target="_blank" class="footer-social-link w-inline-block">
+                  <SocialIcon name={social.icon} />
+                </a>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <img
+        class="brand-name"
+        src="/images/brand-name.webp"
+        width="5074"
+        height="1275"
+        alt="Fertiva"
+        to-top-6=""
+        sizes="100vw"
+        loading="lazy"
+        srcset="/images/brand-name-p-500.png 500w, /images/brand-name-p-800.png 800w, /images/brand-name-p-1080.png 1080w, /images/brand-name-p-1600.png 1600w, /images/brand-name-p-2000.png 2000w, /images/brand-name.webp 5056w"
+      />
+    </div>
+  </div>
+</footer>

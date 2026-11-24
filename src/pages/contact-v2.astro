@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import ContactV2Hero from '../components/sections/contact/ContactV2Hero.astro';
+import ContactV2Form from '../components/sections/contact/ContactV2Form.astro';
+import ContactV2Locations from '../components/sections/contact/ContactV2Locations.astro';
+import FaqV2 from '../components/sections/shared/FaqV2.astro';
+import CtaV2 from '../components/sections/shared/CtaV2.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5679';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Contact V2 - Fertiva" description="Send an enquiry to the Fertiva care team or find the clinic location nearest to you, with directions, opening hours and contact details.">
+  <div class="page-wrapper">
+    <ContactV2Hero />
+    <main class="main">
+      <ContactV2Form />
+      <ContactV2Locations />
+      <FaqV2 />
+      <CtaV2 />
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

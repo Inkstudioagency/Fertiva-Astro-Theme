@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import AboutV3Hero from '../components/sections/about/AboutV3Hero.astro';
+import AboutV3Intro from '../components/sections/about/AboutV3Intro.astro';
+import AboutV3Mission from '../components/sections/about/AboutV3Mission.astro';
+import AboutV3Services from '../components/sections/about/AboutV3Services.astro';
+import AboutV3Timeline from '../components/sections/about/AboutV3Timeline.astro';
+import TrustedFamilies from '../components/sections/shared/TrustedFamilies.astro';
+import BlogV3 from '../components/sections/shared/BlogV3.astro';
+import FaqV3 from '../components/sections/shared/FaqV3.astro';
+import CtaV3 from '../components/sections/shared/CtaV3.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b567b';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="About Us V3 - Fertiva" description="Meet the team behind Fertiva, our mission for compassionate women's health care, and the clinic story that shapes how we treat every patient.">
+  <div class="page-wrapper">
+    <AboutV3Hero />
+    <div class="main">
+      <AboutV3Intro />
+      <AboutV3Mission />
+      <AboutV3Services />
+      <AboutV3Timeline />
+      <TrustedFamilies instanceId="898a8b95-11a9-32c2-ff1f-d09116d8c3cd" />
+      <BlogV3 variant="body-color" />
+      <FaqV3 variant="warm-ivory" />
+      <CtaV3 variant="body-color" />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

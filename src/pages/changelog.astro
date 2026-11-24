@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import ChangelogContent from '../components/sections/utility/ChangelogContent.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5664';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Changelog - Fertiva" description="See every update made to the Fertiva Astro theme, with version numbers, release dates and a summary of what changed.">
+  <div class="page-wrapper">
+    <ChangelogContent />
+    <div class="main">
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

@@ -1,0 +1,17 @@
+# Dependencies & build output
+node_modules/
+dist/
+build/
+.strapi/
+.strapi-updater.json
+types/generated/
+
+# Local data (SQLite database, uploaded media, temp files)
+.tmp/
+public/uploads/*
+!public/uploads/.gitkeep
+
+# Environment
+.env
+*.log
+.DS_Store

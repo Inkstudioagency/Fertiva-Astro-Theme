@@ -1,0 +1,14 @@
+{
+  "name": "Fertiva",
+  "title": "Fertiva - Women's Health and Fertility Clinic",
+  "description": "Fertiva is an Astro theme for women's health clinics, covering pregnancy care, pediatrics, specialist doctors and easy online appointment booking.",
+  "ogImage": "/images/og-image.webp",
+  "lang": "en",
+  "webflow": {
+    "siteId": "6b03d34f707687d1b49b568c"
+  },
+  "credits": {
+    "designer": { "label": "Ink studio", "href": "https://inks.studio" },
+    "poweredBy": { "label": "Astro", "href": "https://astro.build" }
+  }
+}

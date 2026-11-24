@@ -1,0 +1,105 @@
+{
+  "main": [
+    { "label": "Home", "href": "/" },
+    { "label": "About", "href": "/about-us-v1" },
+    { "label": "Services", "href": "/services" },
+    { "label": "Therapists", "href": "/doctors" },
+    { "label": "Contact", "href": "/contact-v1" }
+  ],
+  "dropdown": {
+    "label": "Pages",
+    "groups": [
+      {
+        "title": "Home pages",
+        "links": [
+          { "label": "Home V1", "href": "/" },
+          { "label": "Home V2", "href": "/home-v2" },
+          { "label": "Home V3", "href": "/home-v3" }
+        ]
+      },
+      {
+        "title": "About pages",
+        "links": [
+          { "label": "About Us V1", "href": "/about-us-v1" },
+          { "label": "About Us V2", "href": "/about-us-v2" },
+          { "label": "About Us V3", "href": "/about-us-v3" }
+        ]
+      },
+      {
+        "title": "Contact pages",
+        "links": [
+          { "label": "Contact V1", "href": "/contact-v1" },
+          { "label": "Contact V2", "href": "/contact-v2" },
+          { "label": "Contact V3", "href": "/contact-v3" }
+        ]
+      },
+      {
+        "title": "Other pages",
+        "links": [
+          { "label": "Services", "href": "/services", "plain": true },
+          { "label": "Doctors", "href": "/doctors", "plain": true },
+          { "label": "Blog", "href": "/blog", "plain": true }
+        ]
+      }
+    ],
+    "utility": [
+      { "label": "404", "href": "/404" },
+      { "label": "Password", "href": "/401", "plain": true },
+      { "label": "Style Guide", "href": "/style-guide" },
+      { "label": "Licenses", "href": "/licenses" },
+      { "label": "Changelog", "href": "/changelog" },
+      { "label": "Instructions", "href": "/instructions", "plain": true }
+    ],
+    "promo": {
+      "label": "Book Visit",
+      "href": "/contact-v1"
+    }
+  },
+  "cta": { "label": "Book Appointment", "href": "/contact-v1" },
+  "footer": {
+    "columns": [
+      {
+        "title": "Pages",
+        "links": [
+          { "label": "Home v1", "href": "/" },
+          { "label": "Home v2", "href": "/home-v2" },
+          { "label": "Home v3", "href": "/home-v3" },
+          { "label": "About v1", "href": "/about-us-v1" },
+          { "label": "About v2", "href": "/about-us-v2" },
+          { "label": "About v3", "href": "/about-us-v3" },
+          { "label": "Blogs", "href": "/blog" }
+        ]
+      },
+      {
+        "title": "Inner Pages",
+        "links": [
+          { "label": "Contact V1", "href": "/contact-v1" },
+          { "label": "Contact V2", "href": "/contact-v2" },
+          { "label": "Contact V3", "href": "/contact-v3" },
+          { "label": "Doctors", "href": "/doctors" },
+          { "label": "Appointment", "href": "/contact-v1" },
+          { "label": "Password", "href": "/401" },
+          { "label": "404", "href": "/404" }
+        ]
+      },
+      {
+        "title": "Utility",
+        "links": [
+          { "label": "Blog Details", "href": "/blog/hydration-tips-for-fertility-care-and-pregnancy" },
+          { "label": "Service Details", "href": "/service/fertility-testing" },
+          { "label": "Doctor Details", "href": "/doctor/dianne-russell" },
+          { "label": "Style Guide", "href": "/style-guide" },
+          { "label": "Changelog", "href": "/changelog" },
+          { "label": "License", "href": "/licenses" }
+        ]
+      }
+    ],
+    "legal": [{ "label": "Instructions", "href": "/instructions" }],
+    "social": [
+      { "label": "Facebook", "href": "https://facebook.com", "icon": "facebook" },
+      { "label": "X (Twitter)", "href": "https://x.com", "icon": "x" },
+      { "label": "LinkedIn", "href": "https://linkedin.com", "icon": "linkedin" },
+      { "label": "Instagram", "href": "https://instagram.com", "icon": "instagram" }
+    ]
+  }
+}

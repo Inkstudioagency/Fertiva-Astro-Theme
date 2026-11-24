@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import ServicesHero from '../components/sections/services/ServicesHero.astro';
+import ServicesList from '../components/sections/services/ServicesList.astro';
+import ServicesCareJourney from '../components/sections/services/ServicesCareJourney.astro';
+import ServicesSupport from '../components/sections/services/ServicesSupport.astro';
+import Testimonials from '../components/sections/shared/Testimonials.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5670';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Services - Fertiva" description="Explore Fertiva's services, from pregnancy and maternity care to fertility, preventive check-ups, diagnostics and pediatrics, all in one clinic.">
+  <div class="page-wrapper">
+    <ServicesHero />
+    <div class="main">
+      <ServicesList />
+      <ServicesCareJourney />
+      <ServicesSupport />
+      <Testimonials />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

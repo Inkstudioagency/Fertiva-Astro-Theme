@@ -1,0 +1,42 @@
+---
+/**
+ * Primary call-to-action button with the rolling text hover effect.
+ * Variants map 1:1 to the original Webflow component variants.
+ */
+import { isCurrentPath } from '../../lib/utils';
+
+const VARIANTS = {
+  base: 'base',
+  'primary-border': '7a5da344-7ad4-516b-2ebb-3cadf08deae9',
+  'with-border': 'f2e5c636-56da-926b-e276-2290da74c6cc',
+  white: 'e9fc0b83-d7a5-636f-8a4a-85f59847db86',
+  secondary: '4f7104bd-54b2-0f4b-648a-a9405bcf4a72',
+  transparent: '5b520436-614f-6312-52b6-f459636de2ad',
+} as const;
+
+interface Props {
+  href: string;
+  label: string;
+  variant?: keyof typeof VARIANTS;
+  newTab?: boolean;
+}
+
+const { href, label, variant = 'base', newTab = false } = Astro.props;
+const state = VARIANTS[variant];
+const current = isCurrentPath(href, Astro.url.pathname);
+---
+
+<a
+  href={href}
+  data-wf--primary-button--variant={variant}
+  data-wf-component-id="fe6f4be6-50ca-05e1-38e9-9a6e9da8d773"
+  data-wf-variant-state={state}
+  target={newTab ? '_blank' : undefined}
+  aria-current={current ? 'page' : undefined}
+  class:list={['primary-button', state !== 'base' && `w-variant-${state}`, 'w-inline-block', current && 'w--current']}
+>
+  <div class="button-text-wrap">
+    <div class="footer-link-text is-one">{label}</div>
+    <div class="footer-link-text is-two">{label}</div>
+  </div>
+</a>

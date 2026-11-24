@@ -1,0 +1,3519 @@
+{
+  "services": [
+    {
+      "name": "IUI treatment",
+      "slug": "iui-treatment",
+      "number": "01",
+      "summary": "IUI is a gentle, less invasive first step for many couples. We time the procedure carefully with your natural cycle to give you the best possible chance of conception.",
+      "image": "iui-treatment.webp",
+      "features": [
+        {
+          "text": "Short, comfortable procedure"
+        },
+        {
+          "text": "Cycle tracking and ovulation support"
+        },
+        {
+          "text": "A lower-cost option than IVF"
+        },
+        {
+          "text": "Results reviewed with your doctor"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Service overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our IUI programme offers a gentle, well-timed first step for couples and individuals trying to conceive. We combine careful cycle tracking, prepared sperm samples and close follow-up to give you the best possible chance."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "We provide care for conditions"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Unexplained infertility"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Mild male factor infertility"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ovulation disorders such as PCOS"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Cervical mucus or cervical factor issues"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Single women and same-sex couples using donor sperm"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cardsHeading": "Gentle fertility care, step by step",
+      "cards": [
+        {
+          "title": "Cycle Tracking",
+          "description": "Scans and hormone checks to time your procedure precisely."
+        },
+        {
+          "title": "Sperm Preparation",
+          "description": "Lab washing and selection of the healthiest sperm for insemination."
+        },
+        {
+          "title": "Ovulation Support",
+          "description": "Mild medication when needed to help a healthy egg mature."
+        },
+        {
+          "title": "Follow-up Care",
+          "description": "A pregnancy test and review with your doctor after every cycle."
+        }
+      ],
+      "cost": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How much does IUI treatment cost?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The cost depends on whether medication, extra scans or donor sperm are needed. We share a clear, itemised estimate before you start, so you can plan each cycle with confidence."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        "fertility-testing-gallery-2.webp",
+        "fertility-testing-gallery-1.webp"
+      ],
+      "closing": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to expect during your IUI cycle"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "We review your history, run baseline tests and agree a plan that suits your cycle."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Scans track your follicles, and the insemination is timed to your ovulation for the best chance of success."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "About two weeks later you take a pregnancy test, and we talk through the result and next steps together."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IUI is a simple, low-stress option for many people starting their fertility journey. With careful timing and steady support, our team helps you move forward with clarity."
+            }
+          ]
+        }
+      ],
+      "quote": "“They made our first IUI cycle feel calm and simple from start to finish.”",
+      "quoteAuthor": "- Jenny Wilson",
+      "tags": [
+        {
+          "text": "Fertility"
+        },
+        {
+          "text": "Ovulation"
+        },
+        {
+          "text": "Insemination"
+        },
+        {
+          "text": "Follow-up"
+        }
+      ],
+      "seo": {
+        "metaTitle": "IUI Treatment | Gentle Fertility Care at Fertiva",
+        "metaDescription": "Explore IUI treatment at Fertiva: a gentle, less invasive fertility option timed to your natural cycle by caring specialists. Book your consultation today."
+      }
+    },
+    {
+      "name": "IVF treatment",
+      "slug": "ivf-treatment",
+      "number": "02",
+      "summary": "Our IVF programme pairs an advanced embryology lab with truly personal care. One specialist stays with you from stimulation to transfer and adapts every step to you.",
+      "image": "ivf-treatment.webp",
+      "features": [
+        {
+          "text": "One dedicated specialist for your journey"
+        },
+        {
+          "text": "Modern in-house embryology lab"
+        },
+        {
+          "text": "Medication plans tailored to you"
+        },
+        {
+          "text": "Emotional support at every step"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Service overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our IVF programme pairs an advanced in-house embryology lab with truly personal care. One dedicated specialist guides you from stimulation and egg retrieval through to embryo transfer and early pregnancy scans."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "We provide care for conditions"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Blocked or damaged fallopian tubes"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Low ovarian reserve or advanced maternal age"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Male factor infertility and low sperm count"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Endometriosis and PCOS"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Repeated unsuccessful IUI cycles"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cardsHeading": "Complete IVF care under one roof",
+      "cards": [
+        {
+          "title": "Ovarian Stimulation",
+          "description": "Personalised medication plans with close scan monitoring."
+        },
+        {
+          "title": "Egg Retrieval",
+          "description": "A short procedure under light sedation in our day unit."
+        },
+        {
+          "title": "Embryology Lab",
+          "description": "Fertilisation, embryo culture and grading by our expert team."
+        },
+        {
+          "title": "Embryo Transfer",
+          "description": "A gentle transfer followed by early pregnancy support."
+        }
+      ],
+      "cost": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How much does IVF treatment cost?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IVF costs vary with medication doses, lab techniques such as ICSI and whether embryos are frozen. We give you a full, transparent estimate before treatment so there are no surprises."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        "fertility-testing-gallery-1.webp",
+        "fertility-testing-gallery-2.webp"
+      ],
+      "closing": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to expect during your IVF journey"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Your specialist reviews your results and designs a stimulation plan around your body and goals."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Regular scans track egg development, followed by retrieval, fertilisation and embryo culture in our lab."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "The best embryo is transferred, and we support you closely until your first pregnancy scan."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IVF can feel like a big step, but you never take it alone. With one dedicated specialist and a caring team, we help you move through every stage with confidence."
+            }
+          ]
+        }
+      ],
+      "quote": "“They guided us through every step of our IVF journey with real kindness.”",
+      "quoteAuthor": "- Jenny Wilson",
+      "tags": [
+        {
+          "text": "IVF"
+        },
+        {
+          "text": "Embryology"
+        },
+        {
+          "text": "Stimulation"
+        },
+        {
+          "text": "Support"
+        }
+      ],
+      "seo": {
+        "metaTitle": "IVF Treatment | Personal IVF Care at Fertiva",
+        "metaDescription": "Fertiva's IVF programme pairs an advanced embryology lab with one dedicated specialist from stimulation to transfer. Book your IVF consultation today."
+      }
+    },
+    {
+      "name": "Egg freezing",
+      "slug": "egg-freezing",
+      "number": "03",
+      "summary": "Egg freezing lets you protect your fertility for the future. We guide you through stimulation, retrieval and safe storage with close monitoring and honest advice.",
+      "image": "egg-freezing.webp",
+      "features": [
+        {
+          "text": "Personal consultation and planning"
+        },
+        {
+          "text": "Close monitoring through every cycle"
+        },
+        {
+          "text": "Secure, long-term egg storage"
+        },
+        {
+          "text": "Clear, upfront pricing"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Service overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Egg freezing gives you more choice about when to start a family. Our specialists guide you through stimulation, retrieval and secure long-term storage with careful monitoring and honest advice."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "We provide care for conditions"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Planning to delay pregnancy for personal or career reasons"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Upcoming cancer treatment that may affect fertility"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Low or declining ovarian reserve"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Endometriosis or ovarian surgery"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Family history of early menopause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cardsHeading": "Fertility preservation, done carefully",
+      "cards": [
+        {
+          "title": "Fertility Assessment",
+          "description": "AMH testing and scans to understand your egg reserve."
+        },
+        {
+          "title": "Stimulation Plan",
+          "description": "Medication tailored to your body, with regular monitoring."
+        },
+        {
+          "title": "Egg Retrieval",
+          "description": "A quick day-case procedure under light sedation."
+        },
+        {
+          "title": "Secure Storage",
+          "description": "Vitrification and long-term storage in our monitored lab."
+        }
+      ],
+      "cost": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How much does egg freezing cost?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The total cost depends on medication, the number of cycles you need and how long eggs are stored. We explain every part of the price upfront so you can plan with confidence."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        "fertility-testing-gallery-2.webp",
+        "fertility-testing-gallery-1.webp"
+      ],
+      "closing": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to expect when freezing your eggs"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "We start with a consultation and fertility tests to see how many eggs you are likely to collect."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "About two weeks of medication and monitoring prepare your eggs before a short retrieval procedure."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Mature eggs are frozen and stored safely until you decide to use them in the future."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Egg freezing is a practical way to protect future options. With clear advice and attentive care, we help you make the decision that is right for you."
+            }
+          ]
+        }
+      ],
+      "quote": "“I felt informed and supported at every stage of freezing my eggs.”",
+      "quoteAuthor": "- Sarah Malik",
+      "tags": [
+        {
+          "text": "Preservation"
+        },
+        {
+          "text": "Retrieval"
+        },
+        {
+          "text": "Storage"
+        },
+        {
+          "text": "Planning"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Egg Freezing | Protect Your Future Fertility | Fertiva",
+        "metaDescription": "Preserve your fertility with egg freezing at Fertiva. Expert guidance through stimulation, retrieval and safe storage, with honest advice at every step."
+      }
+    },
+    {
+      "name": "Fertility testing",
+      "slug": "fertility-testing",
+      "number": "04",
+      "summary": "Our fertility tests give you a clear picture of your reproductive health. We check hormones, ovarian reserve and sperm, then explain each result in plain language.",
+      "image": "fertility-testing.webp",
+      "features": [
+        {
+          "text": "Easy online booking"
+        },
+        {
+          "text": "Flexible timings to fit your schedule"
+        },
+        {
+          "text": "Friendly, experienced fertility specialists"
+        },
+        {
+          "text": "Same-day or next-day appointments available"
+        }
+      ],
+      "overview": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Service overview"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Our fertility testing gives you a clear picture of your reproductive health. We check hormone levels, ovarian reserve and sperm health, then explain every result in plain language so you can plan your next step."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "We provide care for conditions"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Trying to conceive for more than a year"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Irregular or very painful periods"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Previous miscarriage or pregnancy loss"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Known PCOS, thyroid or hormone issues"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Planning a family in the future"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "cardsHeading": "Complete fertility testing under one roof",
+      "cards": [
+        {
+          "title": "Hormone Tests",
+          "description": "Blood tests for AMH, FSH, thyroid and other key hormones."
+        },
+        {
+          "title": "Pelvic Ultrasound",
+          "description": "A detailed scan of the uterus and ovaries."
+        },
+        {
+          "title": "Semen Analysis",
+          "description": "Count, movement and shape checked in our in-house lab."
+        },
+        {
+          "title": "Results Review",
+          "description": "A one-to-one appointment to explain results and next steps."
+        }
+      ],
+      "cost": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How much does fertility testing cost?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The cost depends on which tests you need and whether both partners are tested. We share a clear package price before your appointment, with no hidden extras."
+            }
+          ]
+        }
+      ],
+      "gallery": [
+        "fertility-testing-gallery-1.webp",
+        "fertility-testing-gallery-2.webp"
+      ],
+      "closing": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to expect from your fertility tests"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "We start with a consultation about your health history, cycle and how long you have been trying to conceive."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Tests are booked around your cycle, and most results are ready within a few days."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Your specialist explains every result and recommends the right next step, from lifestyle changes to treatment."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Good answers start with good tests. Our team makes fertility testing quick, comfortable and easy to understand."
+            }
+          ]
+        }
+      ],
+      "quote": "“Finally we understood what was happening, explained clearly and kindly.”",
+      "quoteAuthor": "- Daniel and Priya",
+      "tags": [
+        {
+          "text": "Hormones"
+        },
+        {
+          "text": "Ultrasound"
+        },
+        {
+          "text": "Semen test"
+        },
+        {
+          "text": "Results"
+        }
+      ],
+      "seo": {
+        "metaTitle": "Fertility Testing | Clear Answers, Fast | Fertiva",
+        "metaDescription": "Get a clear picture of your reproductive health. Fertiva tests hormones, ovarian reserve and sperm health, then explains every result in plain language."
+      }
+    }
+  ],
+  "doctors": [
+    {
+      "name": "Dianne Russell",
+      "slug": "dianne-russell",
+      "order": 1,
+      "category": "Andrology Specialist",
+      "specialtyTitle": "Andrology Specialist, MD",
+      "photo": "dianne-russell.webp",
+      "experience": "7 Years",
+      "dutyTime": "2 PM - 8 PM",
+      "surgeries": "110+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Dianne Russell"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Dianne Russell is a board-certified andrology specialist with 7 years of experience helping patients with male fertility, hormone balance and reproductive health. Known for a calm, unhurried approach, Dr. Russell takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Russell works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "7+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "110+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 340 708",
+      "email": "dianne.russell@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "2 PM - 8 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Male fertility assessment"
+        },
+        {
+          "text": "Semen analysis review"
+        },
+        {
+          "text": "Testosterone & hormone care"
+        },
+        {
+          "text": "Varicocele treatment"
+        },
+        {
+          "text": "Erectile health"
+        },
+        {
+          "text": "Couples fertility counselling"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Andrology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Andrology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Andrology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Dianne Russell, Andrology Specialist | Fertiva",
+        "metaDescription": "Book with Dr. Dianne Russell, MD, an andrology specialist at Fertiva offering expert male fertility assessment, treatment and private consultations."
+      }
+    },
+    {
+      "name": "Theresa Webb",
+      "slug": "theresa-webb",
+      "order": 2,
+      "category": "Andrology Specialist",
+      "specialtyTitle": "Andrology Specialist, MD",
+      "photo": "theresa-webb.webp",
+      "experience": "15 Years",
+      "dutyTime": "10 AM - 5 PM",
+      "surgeries": "380+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Theresa Webb"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Theresa Webb is a board-certified andrology specialist with 15 years of experience helping patients with male fertility, hormone balance and reproductive health. Known for a calm, unhurried approach, Dr. Webb takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Webb works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "15+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "380+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 341 718",
+      "email": "theresa.webb@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "10 AM - 5 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Male fertility assessment"
+        },
+        {
+          "text": "Semen analysis review"
+        },
+        {
+          "text": "Testosterone & hormone care"
+        },
+        {
+          "text": "Varicocele treatment"
+        },
+        {
+          "text": "Erectile health"
+        },
+        {
+          "text": "Couples fertility counselling"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Andrology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Andrology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Andrology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Theresa Webb, Andrology Specialist | Fertiva",
+        "metaDescription": "Meet Dr. Theresa Webb, MD, andrology specialist at Fertiva. Get a clear diagnosis and personalised care for male fertility and reproductive health."
+      }
+    },
+    {
+      "name": "Arlene McCoy",
+      "slug": "arlene-mccoy",
+      "order": 3,
+      "category": "Andrology Specialist",
+      "specialtyTitle": "Andrology Specialist, MD",
+      "photo": "arlene-mccoy.webp",
+      "experience": "10 Years",
+      "dutyTime": "9 AM - 2 PM",
+      "surgeries": "210+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Arlene McCoy"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Arlene McCoy is a board-certified andrology specialist with 10 years of experience helping patients with male fertility, hormone balance and reproductive health. Known for a calm, unhurried approach, Dr. McCoy takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. McCoy works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "10+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "210+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 342 728",
+      "email": "arlene.mccoy@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "9 AM - 2 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Male fertility assessment"
+        },
+        {
+          "text": "Semen analysis review"
+        },
+        {
+          "text": "Testosterone & hormone care"
+        },
+        {
+          "text": "Varicocele treatment"
+        },
+        {
+          "text": "Erectile health"
+        },
+        {
+          "text": "Couples fertility counselling"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Andrology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Andrology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Andrology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Arlene McCoy, Male Fertility Specialist | Fertiva",
+        "metaDescription": "Dr. Arlene McCoy, MD, helps men and couples understand and improve male fertility with thorough testing and tailored treatment at Fertiva. Book a visit."
+      }
+    },
+    {
+      "name": "Courtney Henry",
+      "slug": "courtney-henry",
+      "order": 4,
+      "category": "Endocrinologist",
+      "specialtyTitle": "Reproductive Endocrinologist, MD",
+      "photo": "courtney-henry.webp",
+      "experience": "12 Years",
+      "dutyTime": "1 PM - 9 PM",
+      "surgeries": "300+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Courtney Henry"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Courtney Henry is a board-certified reproductive endocrinologist with 12 years of experience helping patients with hormone-related fertility concerns, PCOS and IVF planning. Known for a calm, unhurried approach, Dr. Henry takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Henry works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "12+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "300+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 343 738",
+      "email": "courtney.henry@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "1 PM - 9 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "PCOS & hormonal health"
+        },
+        {
+          "text": "Thyroid & fertility"
+        },
+        {
+          "text": "Ovulation induction"
+        },
+        {
+          "text": "IVF treatment planning"
+        },
+        {
+          "text": "Egg freezing guidance"
+        },
+        {
+          "text": "Recurrent pregnancy loss"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Reproductive Endocrinology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Reproductive Endocrinology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Reproductive Endocrinology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Courtney Henry, Fertility Specialist | Fertiva",
+        "metaDescription": "Dr. Courtney Henry, MD, is a reproductive endocrinologist at Fertiva guiding IVF, IUI and hormone care with a calm, personal approach. Book today."
+      }
+    },
+    {
+      "name": "Savannah Nguyen",
+      "slug": "savannah-nguyen",
+      "order": 5,
+      "category": "Endocrinologist",
+      "specialtyTitle": "Reproductive Endocrinologist, MD",
+      "photo": "savannah-nguyen.webp",
+      "experience": "8 Years",
+      "dutyTime": "11 AM - 6 PM",
+      "surgeries": "140+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Savannah Nguyen"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Savannah Nguyen is a board-certified reproductive endocrinologist with 8 years of experience helping patients with hormone-related fertility concerns, PCOS and IVF planning. Known for a calm, unhurried approach, Dr. Nguyen takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Nguyen works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "8+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "140+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 344 748",
+      "email": "savannah.nguyen@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "11 AM - 6 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "PCOS & hormonal health"
+        },
+        {
+          "text": "Thyroid & fertility"
+        },
+        {
+          "text": "Ovulation induction"
+        },
+        {
+          "text": "IVF treatment planning"
+        },
+        {
+          "text": "Egg freezing guidance"
+        },
+        {
+          "text": "Recurrent pregnancy loss"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Reproductive Endocrinology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Reproductive Endocrinology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Reproductive Endocrinology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Savannah Nguyen | Reproductive Endocrinology | Fertiva",
+        "metaDescription": "See Dr. Savannah Nguyen, MD, for expert fertility testing, ovulation and IVF care at Fertiva. Clear plans, honest advice and steady support. Book online."
+      }
+    },
+    {
+      "name": "Brooklyn Simmons",
+      "slug": "brooklyn-simmons",
+      "order": 6,
+      "category": "Endocrinologist",
+      "specialtyTitle": "Reproductive Endocrinologist, MD",
+      "photo": "brooklyn-simmons.webp",
+      "experience": "16 Years",
+      "dutyTime": "8 AM - 3 PM",
+      "surgeries": "420+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Brooklyn Simmons"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Brooklyn Simmons is a board-certified reproductive endocrinologist with 16 years of experience helping patients with hormone-related fertility concerns, PCOS and IVF planning. Known for a calm, unhurried approach, Dr. Simmons takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Simmons works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "16+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "420+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 345 758",
+      "email": "brooklyn.simmons@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "8 AM - 3 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "PCOS & hormonal health"
+        },
+        {
+          "text": "Thyroid & fertility"
+        },
+        {
+          "text": "Ovulation induction"
+        },
+        {
+          "text": "IVF treatment planning"
+        },
+        {
+          "text": "Egg freezing guidance"
+        },
+        {
+          "text": "Recurrent pregnancy loss"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Reproductive Endocrinology Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Reproductive Endocrinology",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Reproductive Endocrinology",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Brooklyn Simmons, IVF & Fertility Doctor | Fertiva",
+        "metaDescription": "Dr. Brooklyn Simmons, MD, reproductive endocrinologist at Fertiva, creates personalised IVF and fertility plans with care at every step. Book your visit."
+      }
+    },
+    {
+      "name": "Wade Warren",
+      "slug": "wade-warren",
+      "order": 7,
+      "category": "Women's Hormone",
+      "specialtyTitle": "Women's Hormone Specialist, MD",
+      "photo": "wade-warren.webp",
+      "experience": "9 Years",
+      "dutyTime": "12 PM - 8 PM",
+      "surgeries": "170+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Wade Warren"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Wade Warren is a board-certified women's hormone specialist with 9 years of experience helping patients with cycle disorders, menopause and lifelong hormone balance. Known for a calm, unhurried approach, Dr. Warren takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Warren works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "9+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "170+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 346 768",
+      "email": "wade.warren@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "12 PM - 8 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Menstrual cycle disorders"
+        },
+        {
+          "text": "Menopause management"
+        },
+        {
+          "text": "Hormone therapy"
+        },
+        {
+          "text": "PCOS & weight balance"
+        },
+        {
+          "text": "Bone & metabolic health"
+        },
+        {
+          "text": "Pre-conception care"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Women's Health Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Women's Health",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Women's Health",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Wade Warren, Women's Hormone Specialist | Fertiva",
+        "metaDescription": "Dr. Wade Warren, MD, treats PCOS, thyroid and hormonal imbalance at Fertiva with thorough testing and personalised plans. Book a hormone consultation."
+      }
+    },
+    {
+      "name": "Guy Hawkins",
+      "slug": "guy-hawkins",
+      "order": 8,
+      "category": "Women's Hormone",
+      "specialtyTitle": "Women's Hormone Specialist, MD",
+      "photo": "guy-hawkins.webp",
+      "experience": "11 Years",
+      "dutyTime": "9 AM - 4 PM",
+      "surgeries": "260+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Guy Hawkins"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Guy Hawkins is a board-certified women's hormone specialist with 11 years of experience helping patients with cycle disorders, menopause and lifelong hormone balance. Known for a calm, unhurried approach, Dr. Hawkins takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Hawkins works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "11+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "260+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 347 778",
+      "email": "guy.hawkins@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "9 AM - 4 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Menstrual cycle disorders"
+        },
+        {
+          "text": "Menopause management"
+        },
+        {
+          "text": "Hormone therapy"
+        },
+        {
+          "text": "PCOS & weight balance"
+        },
+        {
+          "text": "Bone & metabolic health"
+        },
+        {
+          "text": "Pre-conception care"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Women's Health Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Women's Health",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Women's Health",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Guy Hawkins, Hormone Health Specialist | Fertiva",
+        "metaDescription": "Meet Dr. Guy Hawkins, MD, a women's hormone specialist at Fertiva helping with cycles, menopause and hormonal health through calm, expert care."
+      }
+    },
+    {
+      "name": "Leslie Alexander",
+      "slug": "leslie-alexander",
+      "order": 9,
+      "category": "Women's Hormone",
+      "specialtyTitle": "Women's Hormone Specialist, MD",
+      "photo": "leslie-alexander.webp",
+      "experience": "13 Years",
+      "dutyTime": "8 AM - 1 PM",
+      "surgeries": "280+",
+      "availability": "Available this week",
+      "about": [
+        {
+          "type": "heading",
+          "level": 1,
+          "children": [
+            {
+              "type": "text",
+              "text": "About Dr. Leslie Alexander"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Dr. Leslie Alexander is a board-certified women's hormone specialist with 13 years of experience helping patients with cycle disorders, menopause and lifelong hormone balance. Known for a calm, unhurried approach, Dr. Alexander takes time to listen, explain every option clearly and build a care plan around each patient's goals."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Every consultation starts with understanding your history and concerns. From the first test to ongoing follow-up, Dr. Alexander works closely with our nursing and lab teams so you always know what comes next."
+            }
+          ]
+        }
+      ],
+      "stats": [
+        {
+          "value": "13+",
+          "label": "Years of experience"
+        },
+        {
+          "value": "280+",
+          "label": "Successful procedures"
+        },
+        {
+          "value": "4.9/5",
+          "label": "Patient rating"
+        }
+      ],
+      "phone": "+880 1712 348 788",
+      "email": "leslie.alexander@example.com",
+      "clinicAddress": "House 12, Road 90, Gulshan 2, Dhaka",
+      "weekdayHours": "8 AM - 1 PM",
+      "saturdayHours": "10:00 AM - 2:00 PM",
+      "sundayHours": "Closed",
+      "consultationFee": "$80 per visit",
+      "expertise": [
+        {
+          "text": "Menstrual cycle disorders"
+        },
+        {
+          "text": "Menopause management"
+        },
+        {
+          "text": "Hormone therapy"
+        },
+        {
+          "text": "PCOS & weight balance"
+        },
+        {
+          "text": "Bone & metabolic health"
+        },
+        {
+          "text": "Pre-conception care"
+        }
+      ],
+      "timeline": [
+        {
+          "years": "2019 - Now",
+          "title": "Lead Women's Health Specialist",
+          "description": "Leads specialist consultations, treatment planning and patient education at Fertiva."
+        },
+        {
+          "years": "2014 - 2019",
+          "title": "Consultant, Women's Health",
+          "description": "Managed outpatient clinics, diagnostic reviews and long-term treatment follow-up."
+        },
+        {
+          "years": "2010 - 2014",
+          "title": "Residency in Women's Health",
+          "description": "Four-year residency focused on diagnosis, hormone management and minimally invasive care."
+        },
+        {
+          "years": "2004 - 2010",
+          "title": "Doctor of Medicine (MD)",
+          "description": "Completed medical school with honours and a research focus on reproductive health."
+        }
+      ],
+      "seo": {
+        "metaTitle": "Dr. Leslie Alexander, Women's Hormone Doctor | Fertiva",
+        "metaDescription": "Dr. Leslie Alexander, MD, offers expert women's hormone care at Fertiva, from irregular cycles to fertility hormones, with clear, caring guidance."
+      }
+    }
+  ],
+  "articles": [
+    {
+      "title": "Your Third Trimester Checklist for a Calm Birth",
+      "slug": "your-third-trimester-checklist-for-a-calm-birth",
+      "category": "Pregnancy",
+      "thumbnail": "your-third-trimester-checklist-for-a-calm-birth.webp",
+      "publishDate": "2026-05-28",
+      "summary": "What to plan, pack and prioritise in the last months of pregnancy so you feel calm and ready.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "The third trimester is the home stretch. Your body is working hard, and a little planning now helps the last weeks feel calmer and more in your control."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to prepare in advance"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Pack your hospital bag by week 35, including documents, comfortable clothes and baby essentials."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Agree a simple birth plan with your care team and share it with your partner."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Arrange help at home for the first two weeks after birth."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Save your clinic and labour ward numbers somewhere easy to find."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Why the last weeks matter"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Your baby gains most of their weight in these final months, and regular check-ups let us track growth, position and your blood pressure closely."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "This is also the time to talk openly about how you feel. Tiredness and worry are common, and your specialist can help with both."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Preparing early is not about controlling every detail. It is about giving yourself space to rest when the time comes.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Looking after your body"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Gentle walks, pelvic floor exercises and good sleep support your body as it gets ready for labour."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Eat little and often, stay hydrated and tell us straight away about swelling, headaches or reduced movements."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Questions to ask at your next visit"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "What signs mean I should come in straight away?"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "How will we decide if induction is needed?"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "What pain relief options are available to me?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "With a clear plan, the right support and regular check-ups, you can approach your due date feeling prepared and confident."
+            }
+          ]
+        }
+      ],
+      "readTime": "6 Min",
+      "author": "courtney-henry",
+      "seo": {
+        "metaTitle": "Third Trimester Checklist",
+        "metaDescription": "What to plan, pack and prioritise in the last months of pregnancy. A calm third trimester checklist from Fertiva's specialists to help you feel ready."
+      }
+    },
+    {
+      "title": "Fertility Diet: Key Nutrients During Treatment",
+      "slug": "fertility-diet-key-nutrients-during-treatment",
+      "category": "Wellness",
+      "thumbnail": "fertility-diet-key-nutrients-during-treatment.webp",
+      "publishDate": "2026-06-05",
+      "summary": "Practical food choices and key nutrients that help your body feel prepared during fertility treatment.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "What you eat cannot guarantee a pregnancy, but a balanced diet gives your body the best possible foundation during fertility treatment."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Building a fertility-friendly plate"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Half your plate as colourful vegetables and fruit."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Whole grains such as oats, brown rice and wholemeal bread."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Lean proteins including fish, eggs, beans and lentils."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Healthy fats from olive oil, nuts, seeds and avocado."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Nutrients worth focusing on"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Folate supports early development, which is why most women trying to conceive are advised to take a daily supplement."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Iron, vitamin D and omega-3 fats also play important roles. A simple blood test can show whether you need extra support."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Small, steady changes to your daily meals are far more sustainable than a strict diet you cannot keep up.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Foods to limit"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Keep caffeine moderate, avoid alcohol and limit highly processed foods that are high in sugar and salt."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Partners matter too. Healthy eating supports sperm quality, so it helps to make these changes together."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Simple habits to start this week"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Plan three balanced meals before you shop."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Keep a bottle of water with you through the day."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Swap one sugary snack for fruit or a handful of nuts."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Good nutrition is one part of a bigger picture. Our specialists can tailor advice to your treatment plan and your health history."
+            }
+          ]
+        }
+      ],
+      "readTime": "5 Min",
+      "author": "leslie-alexander",
+      "seo": {
+        "metaTitle": "Fertility Diet Guide",
+        "metaDescription": "Practical food choices and key nutrients that support your body during fertility treatment. Doctor-reviewed nutrition tips from the Fertiva care team."
+      }
+    },
+    {
+      "title": "IVF vs IUI: Which Fertility Treatment Is Right for You",
+      "slug": "ivf-vs-iui-which-fertility-treatment-is-right-for-you",
+      "category": "Fertility",
+      "thumbnail": "ivf-vs-iui-which-fertility-treatment-is-right-for-you.webp",
+      "publishDate": "2026-06-15",
+      "summary": "A clear comparison of IVF and IUI, how each treatment works and who each one is best suited for.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IVF and IUI are two of the most common fertility treatments. They work in different ways, and the right choice depends on your age, history and test results."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "IUI at a glance"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Prepared sperm is placed directly in the uterus around ovulation."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Less invasive and usually less costly than IVF."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Often recommended as a first step for unexplained infertility."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "May be combined with gentle medication to support ovulation."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How IVF works"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IVF begins with medication to help several eggs mature. The eggs are collected, fertilised in our lab, and the healthiest embryo is transferred to the uterus."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Because fertilisation happens in the lab, IVF can help when tubes are blocked, sperm counts are low or other treatments have not worked."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“There is no single best treatment. The best option is the one that fits your body, your timeline and your goals.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Success rates and timelines"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "IVF generally has higher success rates per cycle, while IUI is simpler and can be repeated over several months."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Your specialist will explain realistic expectations based on your own results, not general averages."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How we help you decide"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Review your history and any previous treatment."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Complete hormone, ultrasound and semen tests."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Talk through options, costs and timelines together."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Whichever path you choose, you will have a dedicated team guiding you through every step, from the first scan to the result."
+            }
+          ]
+        }
+      ],
+      "readTime": "7 Min",
+      "author": "theresa-webb",
+      "seo": {
+        "metaTitle": "IVF vs IUI Explained",
+        "metaDescription": "A clear comparison of IVF and IUI: how each fertility treatment works, what affects success and who each one suits best. Expert guidance from Fertiva."
+      }
+    },
+    {
+      "title": "Simple Daily Self-Care Rituals for Pregnancy",
+      "slug": "simple-daily-self-care-rituals-for-pregnancy",
+      "category": "Pregnancy",
+      "thumbnail": "simple-daily-self-care-rituals-for-pregnancy.webp",
+      "publishDate": "2026-06-24",
+      "summary": "Easy daily self-care ideas that help you rest, move and feel more like yourself throughout pregnancy.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Pregnancy changes your body and your routines. Small daily rituals can help you rest, stay connected to yourself and feel more at ease."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Everyday self-care ideas"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A short walk in daylight to lift your mood and energy."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Ten minutes of stretching or prenatal yoga before bed."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A warm (not hot) bath to ease tired muscles."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Writing down three things you are looking forward to."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Rest is part of the plan"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Fatigue is common, especially in the first and third trimesters. Short rests through the day are not a luxury, they are part of a healthy pregnancy."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Try to keep a regular sleep routine and use pillows to support your back and bump."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Looking after yourself is one of the first ways you look after your baby.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Caring for your emotional health"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Mood changes are normal, but persistent low mood or anxiety deserve attention. Talking to someone early makes a real difference."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Stay connected with friends and family, and let people help with meals or chores."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Before trying something new"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Check new exercise with your doctor or midwife."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Avoid saunas, hot tubs and very hot baths."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Choose pregnancy-safe skincare and massage oils."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Self-care in pregnancy does not need to be complicated. Simple, consistent habits help you feel more like yourself every day."
+            }
+          ]
+        }
+      ],
+      "readTime": "5 Min",
+      "author": "courtney-henry",
+      "seo": {
+        "metaTitle": "Pregnancy Self-Care",
+        "metaDescription": "Easy daily self-care ideas to help you rest, move and feel more like yourself throughout pregnancy. Gentle, practical tips from Fertiva specialists."
+      }
+    },
+    {
+      "title": "Your First Fertility Appointment: What to Expect",
+      "slug": "your-first-fertility-appointment-what-to-expect",
+      "category": "Fertility",
+      "thumbnail": "your-first-fertility-appointment-what-to-expect.webp",
+      "publishDate": "2026-07-01",
+      "summary": "A calm, step-by-step guide to your first fertility appointment, from what to bring to the questions worth asking.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Your first fertility consultation is about understanding your story. There is no pressure to decide anything on the day."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What to bring"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Any previous test results or scan reports."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Dates of your last few menstrual cycles."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "A list of current medications and supplements."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Your questions, written down so nothing is forgotten."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "What happens during the visit"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Your specialist will ask about your health, cycle, lifestyle and how long you have been trying to conceive."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "We will explain which tests may help and why, so you understand every step before it happens."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“A good first consultation should leave you with clarity, not more questions.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Common first tests"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most couples start with hormone blood tests, a pelvic ultrasound and a semen analysis."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "These simple tests give us a clear picture and help us recommend the right next step."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Questions worth asking"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "What could be affecting our chances?"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Which tests do you recommend first, and why?"
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "What are our treatment options and timelines?"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Coming prepared helps you get the most from your visit, and our team will guide you through every next step with care."
+            }
+          ]
+        }
+      ],
+      "readTime": "6 Min",
+      "author": "leslie-alexander",
+      "seo": {
+        "metaTitle": "First Fertility Visit",
+        "metaDescription": "A calm, step-by-step guide to your first fertility appointment, from what to bring to the questions worth asking your doctor. Read Fertiva guide."
+      }
+    },
+    {
+      "title": "Hydration Tips for Fertility Care and Pregnancy",
+      "slug": "hydration-tips-for-fertility-care-and-pregnancy",
+      "category": "Wellness",
+      "thumbnail": "hydration-tips-for-fertility-care-and-pregnancy.webp",
+      "publishDate": "2026-07-08",
+      "summary": "Simple hydration habits that support your energy, hormones and overall wellbeing during fertility care and pregnancy.",
+      "body": [
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Intro"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Water supports almost every system your body relies on during fertility treatment and pregnancy, from hormone balance to healthy circulation."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Signs you need more water"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "unordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Feeling tired or light-headed during the day."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Dark yellow urine or headaches."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Dry lips, skin or eyes."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Constipation, especially in pregnancy."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Why hydration matters"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Even mild dehydration can leave you tired and affect how your body responds to medication."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "During pregnancy, your blood volume increases, so your body needs more fluid than usual."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "quote",
+          "children": [
+            {
+              "type": "text",
+              "text": "“Hydration is one of the simplest habits with some of the biggest everyday benefits.”"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "How much is enough?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Most women need around eight to ten glasses a day, more in hot weather or after exercise."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Your needs may change during treatment, so ask your specialist what is right for you."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "‍"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "image": {
+            "__file": "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp"
+          },
+          "children": [
+            {
+              "type": "text",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Easy ways to drink more"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "format": "ordered",
+          "children": [
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Keep a refillable bottle with you."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Add fruit slices for natural flavour."
+                }
+              ]
+            },
+            {
+              "type": "list-item",
+              "children": [
+                {
+                  "type": "text",
+                  "text": "Eat water-rich foods like cucumber, watermelon and soups."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "children": [
+            {
+              "type": "text",
+              "text": "Conclusion"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "text": "Small, steady hydration habits support your energy and wellbeing at every stage of your journey."
+            }
+          ]
+        }
+      ],
+      "readTime": "4 Min",
+      "author": "theresa-webb",
+      "seo": {
+        "metaTitle": "Hydration in Pregnancy",
+        "metaDescription": "Simple hydration habits that support your energy, hormones and wellbeing during fertility care and pregnancy. Practical, doctor-reviewed tips from Fertiva."
+      }
+    }
+  ],
+  "media": {
+    "fertility-testing.webp": {
+      "alternativeText": "Fertility testing"
+    },
+    "fertility-testing-gallery-1.webp": {
+      "alternativeText": "Fertility testing"
+    },
+    "fertility-testing-gallery-2.webp": {
+      "alternativeText": "Fertility testing"
+    },
+    "egg-freezing.webp": {
+      "alternativeText": "Egg freezing"
+    },
+    "ivf-treatment.webp": {
+      "alternativeText": "IVF treatment"
+    },
+    "iui-treatment.webp": {
+      "alternativeText": "IUI treatment"
+    },
+    "leslie-alexander.webp": {
+      "alternativeText": "Leslie Alexander"
+    },
+    "guy-hawkins.webp": {
+      "alternativeText": "Guy Hawkins"
+    },
+    "wade-warren.webp": {
+      "alternativeText": "Wade Warren"
+    },
+    "brooklyn-simmons.webp": {
+      "alternativeText": "Brooklyn Simmons"
+    },
+    "savannah-nguyen.webp": {
+      "alternativeText": "Savannah Nguyen"
+    },
+    "courtney-henry.webp": {
+      "alternativeText": "Courtney Henry"
+    },
+    "arlene-mccoy.webp": {
+      "alternativeText": "Arlene McCoy"
+    },
+    "theresa-webb.webp": {
+      "alternativeText": "Theresa Webb"
+    },
+    "dianne-russell.webp": {
+      "alternativeText": "Dianne Russell"
+    },
+    "hydration-tips-for-fertility-care-and-pregnancy.webp": {
+      "alternativeText": "Hydration Tips for Fertility Care and Pregnancy"
+    },
+    "hydration-tips-for-fertility-care-and-pregnancy-body-1.webp": {
+      "alternativeText": ""
+    },
+    "hydration-tips-for-fertility-care-and-pregnancy-body-2.webp": {
+      "alternativeText": ""
+    },
+    "your-first-fertility-appointment-what-to-expect.webp": {
+      "alternativeText": "Your First Fertility Appointment: What to Expect"
+    },
+    "simple-daily-self-care-rituals-for-pregnancy.webp": {
+      "alternativeText": "Simple Daily Self-Care Rituals for Pregnancy"
+    },
+    "ivf-vs-iui-which-fertility-treatment-is-right-for-you.webp": {
+      "alternativeText": "IVF vs IUI: Which Fertility Treatment Is Right for You"
+    },
+    "fertility-diet-key-nutrients-during-treatment.webp": {
+      "alternativeText": "Fertility Diet: Key Nutrients During Treatment"
+    },
+    "your-third-trimester-checklist-for-a-calm-birth.webp": {
+      "alternativeText": "Your Third Trimester Checklist for a Calm Birth"
+    }
+  }
+}

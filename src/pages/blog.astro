@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import BlogHero from '../components/sections/blog/BlogHero.astro';
+import BlogList from '../components/sections/blog/BlogList.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b566f';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Blog - Fertiva" description="Read expert articles from the Fertiva team on pregnancy, women's health, parenting and wellness, plus the latest news from our clinic.">
+  <div class="page-wrapper">
+    <BlogHero />
+    <div class="main">
+      <BlogList />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

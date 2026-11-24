@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import AboutHero from '../components/sections/about/AboutHero.astro';
+import AboutIntro from '../components/sections/about/AboutIntro.astro';
+import AboutVideo from '../components/sections/about/AboutVideo.astro';
+import AboutPrinciples from '../components/sections/about/AboutPrinciples.astro';
+import AboutJourney from '../components/sections/about/AboutJourney.astro';
+import Testimonials from '../components/sections/shared/Testimonials.astro';
+import BlogInsights from '../components/sections/shared/BlogInsights.astro';
+import Faq from '../components/sections/shared/Faq.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b566b';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="About Us V1 - Fertiva" description="Learn how Fertiva began, the values behind our women's health care, and the doctors and nurses who support every patient from first visit to birth.">
+  <div class="page-wrapper">
+    <AboutHero />
+    <div class="main">
+      <AboutIntro />
+      <AboutVideo />
+      <AboutPrinciples />
+      <AboutJourney />
+      <Testimonials />
+      <BlogInsights />
+      <Faq />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

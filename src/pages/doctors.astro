@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Footer from '../components/global/Footer.astro';
+import DoctorsHero from '../components/sections/doctors/DoctorsHero.astro';
+import DoctorsTabs from '../components/sections/doctors/DoctorsTabs.astro';
+import DoctorsCare from '../components/sections/doctors/DoctorsCare.astro';
+import Faq from '../components/sections/shared/Faq.astro';
+import Cta from '../components/sections/shared/Cta.astro';
+
+const WF_PAGE = '6b03d34f707687d1b49b5671';
+---
+
+<BaseLayout wfPage={WF_PAGE} title="Doctors - Fertiva" description="Browse Fertiva's doctors and specialists in obstetrics, gynecology, fertility and pediatrics, and find the right expert for your care.">
+  <div class="page-wrapper">
+    <DoctorsHero />
+    <div class="main">
+      <DoctorsTabs />
+      <DoctorsCare />
+      <Faq />
+      <Cta wfPage={WF_PAGE} />
+    </div>
+    <Footer />
+  </div>
+</BaseLayout>

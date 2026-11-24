@@ -1,0 +1,68 @@
+---
+/**
+ * Runtime scripts, loaded in the same order as the original template.
+ * All vendor files are self-hosted in `public/js/vendor`.
+ *  - jQuery + webflow.js: nav menu, dropdowns, tabs, sliders, background video, Lottie, IX3 interactions
+ *  - GSAP (+ SplitText, ScrollTrigger): required by the IX3 interactions and the counter animation
+ *  - Lenis: smooth scrolling
+ */
+---
+
+<script is:inline src="/js/vendor/jquery-3.5.1.min.js"></script>
+<script is:inline src="/js/webflow.js"></script>
+<script is:inline src="/js/vendor/gsap.min.js"></script>
+<script is:inline src="/js/vendor/SplitText.min.js"></script>
+<script is:inline src="/js/vendor/ScrollTrigger.min.js"></script>
+<link rel="stylesheet" href="/js/vendor/lenis.css" />
+<script is:inline src="/js/vendor/lenis.min.js"></script>
+<script is:inline>
+  // Lenis smooth scroll
+  if (typeof Lenis !== 'undefined') {
+    const lenis = new Lenis({ smoothWheel: true, lerp: 0.07, wheelMultiplier: 1, infinite: false });
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }
+</script>
+<script is:inline>
+  // Counter animation for elements with [data-counter] (GSAP + ScrollTrigger)
+  window.Webflow ||= [];
+  window.Webflow.push(() => {
+    if (typeof gsap === 'undefined') return;
+    document.querySelectorAll('[data-counter]').forEach((counter) => {
+      // Animate the first text node (the number), so a trailing <span>+</span> is left alone
+      const textNode = [...counter.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim());
+      const textEl = textNode || counter.firstElementChild || counter;
+      const original = textEl.textContent.trim();
+      const match = original.match(/^([^0-9.-]*)([0-9.,-]+)(.*)$/);
+      if (!match) return;
+      const prefix = match[1];
+      const number = match[2].replace(/,/g, '');
+      const suffix = match[3];
+      const target = parseFloat(number);
+      if (Number.isNaN(target)) return;
+      const hasDecimal = number.includes('.');
+      const hasComma = original.includes(',');
+      const value = { current: 0 };
+      gsap.fromTo(
+        value,
+        { current: 0 },
+        {
+          current: target,
+          duration: 1.8,
+          ease: 'power2.out',
+          scrollTrigger: { trigger: counter, start: 'top 88%', once: true },
+          onUpdate: () => {
+            let formattedValue = hasDecimal ? value.current.toFixed(1) : Math.floor(value.current);
+            if (hasComma && !hasDecimal) {
+              formattedValue = Number(formattedValue).toLocaleString();
+            }
+            textEl.textContent = prefix + formattedValue + suffix;
+          },
+        }
+      );
+    });
+  });
+</script>

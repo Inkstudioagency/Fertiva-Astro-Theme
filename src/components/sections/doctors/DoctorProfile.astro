@@ -1,0 +1,137 @@
+---
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+import type { Doctor } from '../../../lib/cms';
+import { blocksToHtml, cardHtml } from '../../../lib/blocks';
+
+interface Props {
+  doctor: Doctor;
+}
+
+const { doctor } = Astro.props;
+---
+<section class="section light">
+  <div class="section-gap">
+    <div class="container">
+      <a href="/doctors" class="profile-back-link w-inline-block"><svg fill="none" viewBox="0 0 20 20" width="100%" xmlns="http://www.w3.org/2000/svg" class="profile-small-icon profile-small-icon">
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.25" stroke="currentColor" d="M4.58292 10.002L15.8329 10.002"></path>
+          <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.25" stroke="currentColor" d="M9.16702 15.002C9.16702 15.002 4.16709 11.3195 4.16708 10.0019C4.16707 8.68433 9.1671 5.00196 9.1671 5.00196"></path>
+        </svg>
+        <div>All Doctors</div>
+      </a>
+      <div class="profile-grid">
+        <div class="profile-sidebar">
+          <div class="profile-photo-wrap"><img src={doctor.photo.src} srcset={doctor.photo.srcset} loading="lazy" width="1644" height="2024" alt={doctor.photo.alt} class="profile-photo">
+            <div class="availability-badge">
+              <div class="status-dot"></div>
+              <div>{doctor.availability}</div>
+            </div>
+          </div>
+          <div to-top-0="" class="profile-card">
+            <div class="profile-name-block">
+              <div class="font-medium">{doctor.name}</div>
+              <div class="profile-text">{doctor.specialtyTitle}</div>
+            </div>
+            <div class="contact-list">
+              <div class="contact-row">
+                <div class="contact-icon"><svg fill="none" viewBox="0 0 22 22" width="100%" xmlns="http://www.w3.org/2000/svg" class="contact-glyph contact-glyph">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.63636" stroke="currentColor" d="M20 15.3816V18.1089C20.001 18.3621 19.9492 18.6127 19.8477 18.8446C19.7463 19.0766 19.5975 19.2849 19.411 19.456C19.2244 19.6272 19.0042 19.7575 18.7643 19.8386C18.5245 19.9197 18.2703 19.9498 18.0182 19.9271C15.2208 19.6228 12.5338 18.6669 10.1727 17.1361C7.97621 15.7404 6.11394 13.8781 4.71818 11.6816C3.1821 9.30981 2.22601 6.6097 1.92727 3.79978C1.90455 3.54838 1.93443 3.29501 2.015 3.0558C2.09557 2.81659 2.22506 2.59677 2.39524 2.41034C2.56542 2.22392 2.77255 2.07497 3.00344 1.97298C3.23434 1.87099 3.48394 1.8182 3.73636 1.81796H6.46363C6.90482 1.81362 7.33254 1.96985 7.66705 2.25753C8.00157 2.54522 8.22007 2.94473 8.28182 3.3816C8.4 4.25432 8.60909 5.10887 8.91818 5.93614C9.04049 6.26153 9.06696 6.61515 8.99446 6.95512C8.92195 7.29509 8.75351 7.60715 8.50909 7.85432L7.35454 9.00887C8.64869 11.2848 10.5331 13.1693 12.8091 14.4634L13.9636 13.3089C14.2108 13.0644 14.5229 12.896 14.8628 12.8235C15.2028 12.751 15.5564 12.7775 15.8818 12.8998C16.7091 13.2089 17.5636 13.418 18.4364 13.5361C18.878 13.5984 19.2813 13.8209 19.5696 14.1611C19.8579 14.5014 20.0111 14.9358 20 15.3816Z"></path>
+                  </svg></div>
+                <div class="doctor-info-wrap">
+                  <div class="contact-label">Phone</div>
+                  <a href={doctor.phoneHref} class="contact-value-link w-inline-block">
+                    <div class="contact-value">{doctor.phone}</div>
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon"><svg fill="none" viewBox="0 0 22 22" width="100%" xmlns="http://www.w3.org/2000/svg" class="contact-glyph contact-glyph">
+                    <path stroke-width="1.63636" stroke="currentColor" d="M18.1818 3.63623H3.63637C2.63221 3.63623 1.81818 4.45026 1.81818 5.45441V16.3635C1.81818 17.3677 2.63221 18.1817 3.63637 18.1817H18.1818C19.186 18.1817 20 17.3677 20 16.3635V5.45441C20 4.45026 19.186 3.63623 18.1818 3.63623Z"></path>
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.63636" stroke="currentColor" d="M20 6.36377L11.8455 11.5456C11.5648 11.7214 11.2403 11.8147 10.9091 11.8147C10.5779 11.8147 10.2534 11.7214 9.97273 11.5456L1.81818 6.36377"></path>
+                  </svg></div>
+                <div class="doctor-info-wrap">
+                  <div class="contact-label">Email</div>
+                  <a href={`mailto:${doctor.email}`} class="contact-value-link w-inline-block">
+                    <div class="contact-value">{doctor.email}</div>
+                    <div class="demo">#</div>
+                  </a>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon"><svg fill="none" viewBox="0 0 22 22" width="100%" xmlns="http://www.w3.org/2000/svg" class="contact-glyph contact-glyph">
+                    <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.63636" stroke="currentColor" d="M18.1818 9.09109C18.1818 14.5456 10.9091 20.0002 10.9091 20.0002C10.9091 20.0002 3.63637 14.5456 3.63637 9.09109C3.63637 7.16224 4.4026 5.31239 5.7665 3.94849C7.1304 2.58459 8.98025 1.81836 10.9091 1.81836C12.8379 1.81836 14.6878 2.58459 16.0517 3.94849C17.4156 5.31239 18.1818 7.16224 18.1818 9.09109Z"></path>
+                    <path stroke-width="1.63636" stroke="currentColor" d="M10.9091 11.8183C12.4153 11.8183 13.6364 10.5973 13.6364 9.09104C13.6364 7.58481 12.4153 6.36377 10.9091 6.36377C9.40287 6.36377 8.18182 7.58481 8.18182 9.09104C8.18182 10.5973 9.40287 11.8183 10.9091 11.8183Z"></path>
+                  </svg></div>
+                <div class="doctor-info-wrap">
+                  <div class="contact-label">Clinic</div>
+                  <div class="contact-value">{doctor.clinicAddress}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div to-top-0="" class="profile-card dark">
+            <h2 class="doctor-card-name">Weekly schedule</h2>
+            <div class="schedule-list">
+              <div class="schedule-row">
+                <div>Monday – Friday</div>
+                <div>{doctor.weekdayHours}</div>
+              </div>
+              <div class="schedule-row">
+                <div>Saturday</div>
+                <div>{doctor.saturdayHours}</div>
+              </div>
+              <div class="schedule-row">
+                <div>Sunday</div>
+                <div>{doctor.sundayHours}</div>
+              </div>
+            </div>
+            <div class="fee-row">
+              <div class="schedule-bottom">
+                <div class="fee-label">Consultation fee</div>
+                <div class="fee-value">{doctor.consultationFee}</div>
+              </div>
+              <PrimaryButton href="/contact-v1" label="Book Appointment" />
+            </div>
+          </div>
+        </div>
+        <div class="profile-main">
+          <div class="profile-top">
+            <div class="doctor-rich-text w-richtext" set:html={blocksToHtml(doctor.about)}></div>
+            <div class="profile-stats">
+              {doctor.stats.map((stat) => (
+                <div class="profile-stat">
+                  <div data-counter="counter" class="profile-stat-value">{stat.value}</div>
+                  <div class="profile-text">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div to-top-0="" class="doctor-profile">
+            <h2 class="profile-section-title">Areas Of Expertise</h2>
+            <div class="expertise-grid">
+              {doctor.expertise.map((item) => (
+                <div class="expertise-item">
+                  <div class="check-circle"><svg fill="none" viewBox="0 0 14 14" width="100%" xmlns="http://www.w3.org/2000/svg" class="check-glyph check-glyph">
+                      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.51667" stroke="currentColor" d="M11.6666 3.5L5.24998 9.91667L2.33331 7"></path>
+                    </svg></div>
+                  <div>{item}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="doctor-profile">
+            <h2 to-top-0="" class="profile-section-title">Education &amp; Experience</h2>
+            <div class="expertise-grid">
+              {doctor.timeline.map((entry, i) => (
+                <div {...{ [i % 2 ? 'to-top-2' : 'to-top-0']: '' }} class="timeline-card">
+                  <div class="year-badge">{entry.years}</div>
+                  <div class="timeline-rich-text w-richtext" set:html={cardHtml(entry)}></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

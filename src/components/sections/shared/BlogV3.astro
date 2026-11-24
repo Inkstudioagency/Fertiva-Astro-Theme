@@ -1,0 +1,66 @@
+---
+import { getArticles } from '../../../lib/cms';
+import { formatDate } from '../../../lib/utils';
+
+interface Props {
+  variant?: 'base' | 'body-color';
+}
+
+const { variant = 'base' } = Astro.props;
+const latest = (await getArticles()).slice(0, 3);
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<section data-wf--blog-v3--variant={variant} data-wf-component-id="4cbcea68-9a64-5ced-d9a4-f7739a69423e" data-wf-variant-state={variant === 'base' ? 'base' : 'a06af4b1-8f39-5323-29ad-c63e9a765430'} class:list={['section worm-ivory', variant !== 'base' && 'w-variant-a06af4b1-8f39-5323-29ad-c63e9a765430']}>
+  <div class="section-gap">
+    <div class="container">
+      <div class="choose-us-header">
+        <div class="section-header">
+          <div class="badge secondary">
+            <div class="badge-dot"></div>
+            <div>Blogs</div>
+          </div>
+          <div class="max-width-30">
+            <h2 heading-rebuild="" class="section-heading">Latest insights on women’s health</h2>
+          </div>
+        </div>
+        <div to-top-2="" class="choose-us-right-v2">
+          <p class="paragraph-regular">Practical, doctor-reviewed advice on fertility, pregnancy and hormonal health — written by our specialists.</p>
+          <PrimaryButton href="/blog" label="Explore Blogs" variant="primary-border" />
+        </div>
+      </div>
+      <div class="blog-wrapper">
+        <div to-top-2="" class="w-dyn-list">
+          <div role="list" class="blog-list w-dyn-items">
+            {latest.map((a) => (
+              <div role="listitem" class="w-dyn-item">
+                <a to-top-2="" href={a.url} class="blog-card-v3 w-inline-block">
+                  <div class="blog-image-wrap">
+                    <div class="blog-image-link-v3"><img src={a.thumbnail.src} srcset={a.thumbnail.srcset} width="1544" height="1276" loading="lazy" alt={a.thumbnail.alt} class="blog-image"></div>
+                  </div>
+                  <div class="blog-card-body left">
+                    <div class="blog-card-text">
+                      <div class="blog-meta">
+                        <div class="blog-meta-text upper">{a.category}</div>
+                        <div class="badge-dot"></div>
+                        <div class="blog-meta-text">{formatDate(a.publishDate)}</div>
+                      </div>
+                      <div class="blog-title-link">
+                        <div class="blog-title">{a.title}</div>
+                      </div>
+                    </div>
+                    <div class="blogv2-read">
+                      <div>Read blog</div><svg fill="none" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg" class="blogv2-arrow blogv2-arrow">
+                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="currentColor" d="M20 12H4M15 17s5-3.682 5-5c0-1.318-5-5-5-5"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            ))}
+          </div>
+          {latest.length === 0 && (<div class="w-dyn-empty"><div>No items found.</div></div>)}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+---
+import Navbar from '../../global/Navbar.astro';
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<div class="hero-wrapper">
+  <div class="contact-hero-area">
+    <Navbar variant="nav-v1" />
+    <section class="section">
+      <div class="container v1">
+        <div class="inner-hero">
+          <div class="inner-left contact-v1">
+            <div class="inner-badge upper-case">
+              <div class="badge-dot white"></div>
+              <div>Contact</div>
+            </div>
+            <h1 class="hero-heading">Get in Touch With Our Medical Experts</h1>
+          </div>
+          <div class="inner-hero-right">
+            <p class="paragraph-regular white">Have a question about fertility, pregnancy or a visit? Send us a message and our care team will reply to you as soon as they can.</p>
+            <PrimaryButton href="#form" label="Book Appointment" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="inner-hero-overlay"></div>
+  </div>
+</div>

@@ -1,0 +1,445 @@
+---
+interface Props {
+  variant?: 'base' | 'warm-ivory';
+}
+
+const { variant = 'base' } = Astro.props;
+import PrimaryButton from '../../ui/PrimaryButton.astro';
+---
+<section data-wf--faq-v3--variant={variant} data-wf-component-id="ae2232d1-9255-5d4c-02f5-624f4c0bcdcd" data-wf-variant-state={variant === 'base' ? 'base' : '3cf34395-21c8-3114-a568-d53166b96df3'} class:list={['section', variant !== 'base' && 'w-variant-3cf34395-21c8-3114-a568-d53166b96df3']}>
+  <div class="section-gap">
+    <div class="container">
+      <div class="section-header center">
+        <div class="badge">
+          <div class="badge-dot"></div>
+          <div>FAQ</div>
+        </div>
+        <div class="max-width-30">
+          <h2 heading-rebuild="" class="section-heading center">Have questions? We’re here to help</h2>
+        </div>
+      </div>
+      <div class="faq-wrapper">
+        <div data-current="Tab 1" data-easing="ease" data-duration-in="300" data-duration-out="100" class="faq-tab w-tabs">
+          <div to-top-0="" class="faq-tab-menu-v3 w-tab-menu">
+            <a data-w-tab="Tab 1" class="faq-tab-link w-inline-block w-tab-link w--current">
+              <div class="faq-link-item-wrap">
+                <div class="faq-dot"></div>
+                <div>Appointments &amp; Booking</div>
+              </div>
+            </a>
+            <a data-w-tab="Tab 2" class="faq-tab-link w-inline-block w-tab-link">
+              <div class="faq-link-item-wrap">
+                <div class="faq-dot"></div>
+                <div>Insurance &amp; Payments</div>
+              </div>
+            </a>
+            <a data-w-tab="Tab 3" class="faq-tab-link w-inline-block w-tab-link">
+              <div class="faq-link-item-wrap">
+                <div class="faq-dot"></div>
+                <div>Fertility &amp; Treatment</div>
+              </div>
+            </a>
+            <a data-w-tab="Tab 4" class="faq-tab-link w-inline-block w-tab-link">
+              <div class="faq-link-item-wrap">
+                <div class="faq-dot"></div>
+                <div>Results &amp; Privacy</div>
+              </div>
+            </a>
+            <a data-w-tab="Tab 5" class="faq-tab-link w-inline-block w-tab-link">
+              <div class="faq-link-item-wrap">
+                <div class="faq-dot"></div>
+                <div>Pregnancy Care</div>
+              </div>
+            </a>
+          </div>
+          <div class="w-tab-content">
+            <div data-w-tab="Tab 1" class="w-tab-pane w--tab-active">
+              <div class="faq-list">
+                <div to-top-2="" class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="font-normal">How do I book my first appointment here?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Book online in under two minutes or call our front desk. Choose your specialist, pick a time that suits you and you will get a confirmation by email and text right away.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="font-normal">Can I get a same-week appointment slot?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. We keep slots open every day for new and urgent cases. Most patients are seen within the same week, and our team will help you find the earliest time available.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="font-normal">What should I bring to my first visit?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Please bring a photo ID, your insurance card, any recent test results and a list of current medicines. Arrive ten minutes early so we can finish the short intake form.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="font-normal">How do I reschedule or cancel a visit?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">You can change or cancel any booking from your confirmation email or by calling us. We ask for 24 hours notice so we can offer the slot to another patient who needs it.</p>
+                    </div>
+                  </div>
+                </div>
+                <div to-top-2="" class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="font-normal">Do you offer online video consultations?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. Many follow-ups, results reviews and first chats can be done by secure video call. Your doctor will tell you if a visit in person is needed for an exam or a scan.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 2" class="w-tab-pane">
+              <div class="faq-list">
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Which insurance plans do you accept here?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">We work with most major insurance plans and many local providers. Share your plan details when booking and our billing team will confirm your cover before your visit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">How much does a first consultation cost?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">A first consultation with a specialist starts at $80. You will get a clear price list before any test or treatment, so there are no surprise charges on your bill later.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Do you offer payment plans for treatment?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. For longer treatments such as IVF we offer monthly payment plans with no hidden fees. Our billing team will walk you through the options before you decide to start.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Which payment methods can I use to pay?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">We accept cash, all major debit and credit cards, bank transfer and mobile wallets. You can pay at the front desk after your visit or online through your patient portal.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Will I get an itemised bill for claims?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. After every visit you get an itemised invoice that lists each service and code. You can send it straight to your insurer or download it from your patient portal.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 3" class="w-tab-pane">
+              <div class="faq-list">
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">What does an andrology specialist treat?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">An andrologist looks after male reproductive health, including low sperm count, hormone imbalance and erectile problems. You get a full assessment and a treatment plan made for you.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">When should we see a fertility doctor?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">We suggest a visit if you have been trying for 12 months, or for 6 months if you are over 35. Come sooner if you have irregular cycles, past surgery or known health issues.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">What is the difference between IUI and IVF?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">IUI places prepared sperm in the uterus around ovulation. IVF joins egg and sperm in our lab and then places the embryo. Your doctor will explain which suits you best.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">How long does one IVF cycle usually take?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">One IVF cycle takes about four to six weeks, from the first hormone injections to the embryo transfer. Your care team will give you a clear calendar for each step ahead.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Can I freeze my eggs for use in future?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. Egg freezing lets you protect your fertility for later. After a short course of hormones we collect and freeze your eggs, and they can be stored safely for years.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 4" class="w-tab-pane">
+              <div class="faq-list">
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">How soon will my test results be ready?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Most blood tests are ready within 24 to 48 hours and scans are often shared the same day. You will get a message when results are ready to view in your patient portal.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Who can see my medical records and data?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Only you and the care team treating you can see your records. We follow strict privacy laws and never share your health information without your written permission.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Can I get a copy of my results to keep?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. You can download every report from your patient portal at any time, or ask the front desk for a printed copy. We can also send results to another doctor for you.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Will my doctor explain my results to me?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. Your doctor will go through every result with you in person or by video, explain what it means in plain words and agree the next steps of your care plan together.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">How is my personal data kept secure here?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Your data is stored on encrypted systems with strict access controls. Our staff are trained in privacy every year, and every access to your file is logged and checked.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-w-tab="Tab 5" class="w-tab-pane">
+              <div class="faq-list">
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">When should I book my first prenatal visit?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Book your first prenatal visit around week eight of pregnancy. We will confirm your due date, run early tests and give you a clear plan for the months ahead with us.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">How many scans will I need while pregnant?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Most healthy pregnancies need two to three routine scans: a dating scan, an anomaly scan at about 20 weeks and sometimes a growth scan later. Your doctor will advise you.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Do you offer birth and parenting classes?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. We run small group classes on labour, breastfeeding and newborn care, led by our own midwives. Partners are always welcome and you can join in person or online.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">What should I do in a pregnancy emergency?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Call our 24/7 line right away if you have heavy bleeding, severe pain or reduced baby movement. Our team will guide you and arrange urgent care at the clinic if needed.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="faq-item-v3">
+                  <div class="faq-question-v3">
+                    <h3 class="faq-question-text-v3">Can I choose my doctor for my pregnancy?</h3>
+                    <div class="faq-icon-wrap-v3"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 20 20" fill="none" class="faq-icon-v3">
+                        <path d="M10 3.33337V16.6667" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                        <path d="M3.33301 10H16.6663" stroke="currentColor" stroke-width="1.44444" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </div>
+                  <div class="faq-answer-wrap">
+                    <div class="faq-answer-v3">
+                      <p class="faq-answer-text">Yes. You can choose your obstetrician at your first visit and see the same doctor through your pregnancy, so you always have a familiar face who knows your full history.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="faq-right-v3">
+          <div to-top-4="" class="faq-right-card">
+            <div class="max-width-14">
+              <div class="font-medium semibold white">Still got questions? Drop us a line</div>
+            </div>
+            <div class="faq-right-bottom">
+              <div class="v2-proof">
+                <div class="faq-avatar"><img width="144" height="144" alt="Portrait of a smiling female healthcare professional with long dark hair, wearing a white coat and stethoscope around her neck." src="/images/Avatar_1Avatar.webp" loading="lazy" class="v2-avatar v3"><img width="144" height="144" alt="Portrait of a male doctor with brown hair and beard wearing a white coat and blue stethoscope around his neck, smiling." src="/images/Avatar-1_1Avatar-1.webp" loading="lazy" class="v2-avatar v3"><img width="144" height="144" alt="Portrait of a smiling female doctor with short dark hair wearing a white coat and a stethoscope around her neck." src="/images/Avatar-2_1Avatar-2.webp" loading="lazy" class="v2-avatar v3"></div>
+                <p class="faq-small-text">Replies within 2 hours</p>
+              </div>
+              <PrimaryButton href="/contact-v1" label="Book Appointment" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
