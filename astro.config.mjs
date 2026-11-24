@@ -13,6 +13,8 @@ export default defineConfig({
   compressHTML: false,
   build: {
     format: 'directory',
+    // Always ship CSS as /_astro/*.css files rather than inlining it.
+    inlineStylesheets: 'never',
   },
   env: {
     schema: {

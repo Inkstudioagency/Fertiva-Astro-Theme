@@ -23,8 +23,8 @@ const code = `<!-- src/components/global/SiteScripts.astro -->
 
 <!-- Counter Animation (GSAP + ScrollTrigger, self-hosted in /js/vendor) -->
 <script is:inline>
-  window.Webflow ||= [];
-  window.Webflow.push(() => {
+  window.FertivaRuntime ||= [];
+  window.FertivaRuntime.push(() => {
     document.querySelectorAll('[data-counter]').forEach((counter) => {
       // ...counts from 0 to the number typed in the element
       gsap.fromTo(value, { current: 0 }, {
@@ -60,7 +60,7 @@ const code = `<!-- src/components/global/SiteScripts.astro -->
         <div class="instruction-content-block is-instruction-cards">
           <div class="difference-card is-instruction-card">
             <h2 class="instruction-card-title">Where Things Live</h2>
-            <p class="instruction-p">Services, doctors and blog articles are managed in Strapi (Content Manager). The site reads them when it builds, so rebuild or redeploy after publishing changes. Navigation, footer links and social profiles are in src/config/menu.json, and the site name and SEO defaults in src/config/site.json. All other page text lives in the section components in src/components/sections. Reveal, hover and slider animations come from the original design and run from public/js/webflow.js; they rely on the existing class names and each page's wfPage id, so keep those unchanged.</p>
+            <p class="instruction-p">Services, doctors and blog articles are managed in Strapi (Content Manager). The site reads them when it builds, so rebuild or redeploy after publishing changes. Navigation, footer links and social profiles are in src/config/menu.json, and the site name and SEO defaults in src/config/site.json. All other page text lives in the section components in src/components/sections. Reveal, hover and slider animations come from the original design and run from public/js/site.js; they rely on the existing class names and each page's wfPage id, so keep those unchanged.</p>
           </div>
           <div class="difference-card is-instruction-card">
             <h3 class="instruction-card-title">Element map</h3>

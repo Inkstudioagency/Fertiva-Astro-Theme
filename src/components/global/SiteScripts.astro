@@ -2,8 +2,9 @@
 /**
  * Runtime scripts, loaded in the same order as the original template.
  * All vendor files are self-hosted in `public/js/vendor`.
- *  - jQuery + webflow.js: nav menu, dropdowns, tabs, sliders, background video, Lottie, IX3 interactions
- *  - GSAP (+ SplitText, ScrollTrigger): required by the IX3 interactions and the counter animation
+ *  - jQuery + site.js: nav menu, dropdowns, tabs, sliders, background video, Lottie, scroll/reveal interactions
+ *  - GSAP (+ SplitText, ScrollTrigger): required by the interactions and the counter animation
+ *  - Forms: see the "Forms" script below
  *  - Lenis: smooth scrolling
  */
 ---
@@ -12,7 +13,7 @@
 <script is:inline src="/js/vendor/gsap.min.js"></script>
 <script is:inline src="/js/vendor/ScrollTrigger.min.js"></script>
 <script is:inline src="/js/vendor/SplitText.min.js"></script>
-<script is:inline src="/js/webflow.js"></script>
+<script is:inline src="/js/site.js"></script>
 <link rel="stylesheet" href="/js/vendor/lenis.css" />
 <script is:inline src="/js/vendor/lenis.min.js"></script>
 <script is:inline>
@@ -28,8 +29,8 @@
 </script>
 <script is:inline>
   // Counter animation for elements with [data-counter] (GSAP + ScrollTrigger)
-  window.Webflow ||= [];
-  window.Webflow.push(() => {
+  window.FertivaRuntime ||= [];
+  window.FertivaRuntime.push(() => {
     if (typeof gsap === 'undefined') return;
     document.querySelectorAll('[data-counter]').forEach((counter) => {
       // Animate the first text node (the number), so a trailing <span>+</span> is left alone
@@ -65,4 +66,23 @@
       );
     });
   });
+</script>
+<script is:inline>
+  // Forms. A form with an `action` (Formspree, Netlify Forms, your own endpoint…) submits there.
+  // A form without one is a demo: nothing is sent and the form's success message is shown.
+  window.addEventListener(
+    'submit',
+    (event) => {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement) || !form.closest('.w-form') || form.hasAttribute('data-password-form')) return;
+      event.stopImmediatePropagation();
+      if (form.getAttribute('action')) return;
+      event.preventDefault();
+      const wrap = form.closest('.w-form');
+      form.style.display = 'none';
+      const done = wrap.querySelector('.w-form-done');
+      if (done) done.style.display = 'block';
+    },
+    true
+  );
 </script>

@@ -89,7 +89,8 @@ When `STRAPI_URL` is set, pages are built from Strapi. When it isn't, they're bu
 - **Site name, SEO defaults, credits:** `src/config/site.json`.
 - **Page copy:** the section components in `src/components/sections`.
 - **Buttons:** `<PrimaryButton href label variant />`, with variants `base`, `primary-border`, `with-border`, `white`, `secondary` and `transparent`.
-- **Animations:** see the `/instructions` page. The reveal, slider and tab interactions run from `public/js/webflow.js` and rely on the existing class names and each page's `wfPage` id, so keep those unchanged.
+- **Forms:** set each form's `action` to your form backend (Formspree, Netlify Forms, your own endpoint). Without an `action`, a form is a demo: nothing is sent and its success message is shown.
+- **Animations:** see the `/instructions` page. The reveal, slider and tab interactions run from `public/js/site.js` and rely on the existing class names and each page's `wfPage` id, so keep those unchanged.
 
 The password page (`/401`) is a design only: a static site can't check passwords, so submitting it just shows the error state. To protect pages, use your host's password protection. The page is `noindex` and excluded from the sitemap.
 

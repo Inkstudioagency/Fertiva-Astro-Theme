@@ -3,9 +3,9 @@
  * Root layout shared by every page.
  *
  * The visual layer is the original Webflow design: the three stylesheets in `src/styles`
- * plus `webflow.js` (navigation, tabs, sliders, background video, Lottie and the IX3/GSAP
- * interactions). `wfPage` must be the original Webflow page id, because the IX3
- * interactions in webflow.js are scoped to it.
+ * plus `public/js/site.js` (navigation, tabs, sliders, background video, Lottie and the
+ * GSAP scroll/reveal interactions). `wfPage` is the page id the interactions are scoped to
+ * (rendered as `data-fertiva-page`), so keep each page's value unchanged.
  */
 import '../styles/normalize.css';
 import '../styles/webflow.css';
@@ -28,7 +28,7 @@ const { wfPage, ...seo } = Astro.props;
 ---
 
 <!doctype html>
-<html data-wf-page={wfPage} data-wf-site={site.webflow.siteId} lang={site.lang}>
+<html data-fertiva-page={wfPage} lang={site.lang}>
   <head>
     <meta charset="utf-8" />
     <SeoMeta {...seo} />
