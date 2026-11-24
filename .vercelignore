@@ -1,2 +1,8 @@
-# The demo builds from the bundled snapshot; the CMS is not deployed with the site.
+# The demo builds from the bundled snapshot: the CMS and local env files are not deployed.
 strapi
+.env
+.env.*
+!.env.example
+dist
+.astro
+node_modules
